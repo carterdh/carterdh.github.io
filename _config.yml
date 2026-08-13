@@ -1,13 +1,13 @@
 # Site settings
-title: "MESGRO - Robotics & Mechatronics Portfolio"
-description: "An open-source template for showcasing robotics and mechatronics projects with 3D models, schematics, and code"
+title: "Carter Delavan-Hoover Engineering Portfolio"
+description: "A collection of projects and information on Carter Delavan-Hoover"
 url: "https://carterdh.github.io"
 baseurl: ""
-author: "Your Name"
-email: "your.email@example.com"
-github_username: "your-github-username"
-linkedin_username: "your-linkedin"
-twitter_username: "your-twitter"
+author: "Carter Delavan-Hoover"
+email: "carterjames.dh@gmail.com"
+github_username: "carterdh"
+linkedin_username: "carter-dh"
+twitter_username: ""
 
 # Build settings
 markdown: kramdown
