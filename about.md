@@ -20,7 +20,7 @@ permalink: /about/
                 >
 
                 <div style="margin-top: 20px;">
-                    <a href="/assets/resume.pdf"
+                    <a href="/assets/Carter_Delavan_Hoover_Resume.pdf"
                        target="_blank"
                        style="display: inline-block; padding: 10px 18px; border-radius: 6px; text-decoration: none; border: 1px solid currentColor;">
                         View Resume
@@ -53,6 +53,21 @@ permalink: /about/
             </div>
 
         </div>
+
+        
+    </section>
+        <section class="about-section" style="margin-top: 40px;">
+        <h2>What I'm Interested In</h2>
+
+        <p>
+            I'm especially interested in engineering that pushes the boundaries
+            of what we can learn and accomplish. Space technology has been a major
+            source of inspiration for me: missions like DART, the Mars
+            Reconnaissance Orbiter, Lucy, and the Parker Solar Probe showed me how
+            engineering can turn ambitious questions into real, working systems.
+            That same interest drives my enthusiasm for mechanical design,
+            manufacturing, robotics, and other challenging projects.
+        </p>
     </section>
 
     <section class="about-section" style="margin-top: 40px;">
@@ -95,24 +110,8 @@ permalink: /about/
         </div>
     </section>
 
-    <section class="about-section" style="margin-top: 40px;">
-        <h2>What I'm Interested In</h2>
-
-        <p>
-            I'm especially interested in engineering that pushes the boundaries
-            of what we can learn and accomplish. Space technology has been a major
-            source of inspiration for me: missions like DART, the Mars
-            Reconnaissance Orbiter, Lucy, and the Parker Solar Probe showed me how
-            engineering can turn ambitious questions into real, working systems.
-            That same interest drives my enthusiasm for mechanical design,
-            manufacturing, robotics, and other challenging projects.
-        </p>
-    </section>
-
-</div>
 
 
-</div>
 
 
 
