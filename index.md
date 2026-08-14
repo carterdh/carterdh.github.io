@@ -1,4 +1,3 @@
-
 ---
 layout: default
 ---
@@ -117,7 +116,7 @@ layout: default
           <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
         </h3>
         
-        <p class="project-excerpt-small">{{ project.description }}</p>
+        <p class="project-excerpt-small">{{ project.description | remove: '...' }}</p>
         
         <div class="project-features-small">
           {% if project.models %}
