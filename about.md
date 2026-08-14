@@ -1,19 +1,16 @@
 ---
-
 layout: default
 title: About
 permalink: /about/
-------------------
+---
 
 <div class="about-content">
-    <div class="container">
 
-```
-    <!-- INTRODUCTION -->
+<div class="about-content"> <div class="container">
+
     <section class="about-section">
         <div style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
 
-            <!-- YOUR PHOTO -->
             <div style="flex: 0 0 220px; text-align: center;">
                 <img
                     src="/assets/images/carter.jpg"
@@ -22,18 +19,15 @@ permalink: /about/
                 >
             </div>
 
-            <!-- YOUR BIO -->
             <div style="flex: 1; min-width: 280px;">
                 <h1>About Me</h1>
 
-                <!-- Replace this paragraph with your own introduction -->
                 <p>
-                    I'm Carter Delavan-Hoover, a mechanical engineering student at
-                    the University of Maryland with an interest in design,
+                    I'm Carter Delavan-Hoover, a mechanical engineering student
+                    at the University of Maryland with an interest in design,
                     manufacturing, robotics, and renewable energy.
                 </p>
 
-                <!-- Add more paragraphs about yourself here -->
                 <p>
                     I'm particularly interested in building things that bridge
                     the gap between engineering design and the physical world.
@@ -42,7 +36,6 @@ permalink: /about/
                     manufacturing, electronics, and mechanical systems.
                 </p>
 
-                <!-- Optional: replace or remove this paragraph -->
                 <p>
                     Outside of engineering, I enjoy learning new things,
                     working on hands-on projects, and finding opportunities
@@ -53,8 +46,6 @@ permalink: /about/
         </div>
     </section>
 
-
-    <!-- SKILLS -->
     <section class="about-section">
         <h2>Skills</h2>
 
@@ -95,8 +86,6 @@ permalink: /about/
         </div>
     </section>
 
-
-    <!-- INTERESTS -->
     <section class="about-section">
         <h2>What I'm Interested In</h2>
 
@@ -106,11 +95,12 @@ permalink: /about/
             work across disciplines and see a design progress from an idea
             to a physical, working system.
         </p>
-
-        <!-- Add anything else you'd like to say here -->
     </section>
 
 </div>
-```
 
+</div>
+
+
+    </div>
 </div>
