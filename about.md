@@ -44,6 +44,19 @@ permalink: /about/
             </div>
 
         </div>
+
+    </section>
+
+    <section class="about-section">
+        <h2>What I'm Interested In</h2>
+
+        <p>
+            I'm especially interested in mechanical design, manufacturing,
+            robotics, and renewable energy. I enjoy projects where I can
+            work across disciplines and see a design progress from an idea
+            to a physical, working system.
+        </p>
+    </section>
     </section>
 
     <section class="about-section">
@@ -84,20 +97,9 @@ permalink: /about/
             </div>
 
         </div>
-    </section>
 
-    <section class="about-section">
-        <h2>What I'm Interested In</h2>
 
-        <p>
-            I'm especially interested in mechanical design, manufacturing,
-            robotics, and renewable energy. I enjoy projects where I can
-            work across disciplines and see a design progress from an idea
-            to a physical, working system.
-        </p>
-    </section>
 
-</div>
 
 </div>
 
