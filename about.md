@@ -18,12 +18,20 @@ permalink: /about/
         <div style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
 
             <div style="flex: 0 0 220px; text-align: center;">
-                <img
-                    src="/assets/images/carter.jpg"
-                    alt="Carter Delavan-Hoover"
-                    style="width: 220px; height: 220px; object-fit: cover; border-radius: 50%;"
-                >
-            </div>
+    <img
+        src="/assets/images/carter.jpg"
+        alt="Carter Delavan-Hoover"
+        style="width: 220px; height: 220px; object-fit: cover; border-radius: 50%;"
+    >
+
+    <div style="margin-top: 18px;">
+        <a href="/assets/Carter_Delavan_Hoover_Resume.pdf"
+           target="_blank"
+           style="display: inline-block; padding: 10px 22px; border: 1px solid #888; border-radius: 999px; text-decoration: none; color: inherit; font-weight: 600;">
+            Resume
+        </a>
+    </div>
+</div>
 
             <div style="flex: 1; min-width: 280px;">
                 <h1>About Me</h1>
