@@ -1,11 +1,12 @@
 ---
-layout: default
----
+
+## layout: default
 
 <div class="hero-personal">
   <div class="container">
     <div class="hero-content">
 
+```
   <div class="hero-info-wrapper">
 
     <div class="hero-photo">
@@ -115,7 +116,7 @@ layout: default
           <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
         </h3>
         
-        <p class="project-excerpt-small">{{ project.description | truncate: 80 }}</p>
+        <p class="project-excerpt-small">{{ project.description }}</p>
         
         <div class="project-features-small">
           {% if project.models %}
@@ -202,6 +203,10 @@ layout: default
         <span class="skill-tag">Data Analysis</span>
       </div>
     </div>
+
+  </div>
+</div>
+```
 
   </div>
 </div>
