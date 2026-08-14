@@ -30,8 +30,8 @@ permalink: /about/
 
                 <p>
                     I'm Carter Delavan-Hoover, a mechanical engineering student
-                    at the University of Maryland with an interest in design,
-                    manufacturing, robotics, and renewable energy.
+                    at the University of Maryland with an interest in space technology,
+                    manufacturing, robotics, and general mechanical design.
                 </p>
 
                 <p>
@@ -41,6 +41,11 @@ permalink: /about/
                     projects, I've had the opportunity to work with CAD,
                     manufacturing, electronics, and mechanical systems.
                 </p>
+
+                </p>
+                    I'm deeply interested in space technology that stretches our knowledge of the universe.
+                    Projects like DART, the Mars Reconnaissance Orbiter, LUCY, and the Parker Space Probe are what
+                    originally inspired me to study engineering. 
 
                 <p>
                     Outside of engineering, I enjoy learning new things,
@@ -57,8 +62,8 @@ permalink: /about/
         <h2>What I'm Interested In</h2>
 
         <p>
-            I'm especially interested in mechanical design, manufacturing,
-            robotics, and renewable energy. I enjoy projects where I can
+            I'm especially interested in space technology, manufacturing,
+            robotics, and general mechanical design. I enjoy projects where I can
             work across disciplines and see a design progress from an idea
             to a physical, working system.
         </p>
@@ -73,8 +78,8 @@ permalink: /about/
             <div class="feature-item">
                 <h3>CAD & Design</h3>
                 <p>
-                    SolidWorks · 3D Modeling · Mechanical Design ·
-                    3D Scanning · Design for Manufacturing
+                    SolidWorks · 3D Modeling · Fusion 360 · Mechanical Design ·
+                    3D Scanning · DFM
                 </p>
             </div>
 
@@ -82,7 +87,7 @@ permalink: /about/
                 <h3>Manufacturing</h3>
                 <p>
                     3D Printing · CNC Machining · Prototyping ·
-                    Fabrication · Hands-on Manufacturing
+                    Mill · Lathe · Bandsaw · Assorted Metalworking Tools
                 </p>
             </div>
 
@@ -90,7 +95,7 @@ permalink: /about/
                 <h3>Programming & Analysis</h3>
                 <p>
                     MATLAB · Python · Arduino · Data Analysis ·
-                    Numerical Methods
+                    Excel VBA
                 </p>
             </div>
 
