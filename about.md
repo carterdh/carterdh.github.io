@@ -4,42 +4,37 @@ title: About
 permalink: /about/
 ---
 
+---
+
 <div class="about-content">
+    <div class="container">
 
-<div class="about-content"> <div class="container">
-
-<style>
-    .about-section h3 {
-        font-size: 20px;
-    }
-</style>
-
-    <section class="about-section">
+    <section class="about-section" style="padding-top: 30px;">
         <div style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
 
             <div style="flex: 0 0 220px; text-align: center;">
-    <img
-        src="/assets/images/carter.jpg"
-        alt="Carter Delavan-Hoover"
-        style="width: 220px; height: 220px; object-fit: cover; border-radius: 50%;"
-    >
+                <img
+                    src="/assets/images/carter.jpg"
+                    alt="Carter Delavan-Hoover"
+                    style="width: 220px; height: 220px; object-fit: cover; border-radius: 50%;"
+                >
 
-    <div style="margin-top: 18px;">
-        <a href="/assets/Carter_Delavan_Hoover_Resume.pdf"
-           target="_blank"
-           style="display: inline-block; padding: 10px 22px; border: 1px solid #888; border-radius: 999px; text-decoration: none; color: inherit; font-weight: 600;">
-            Resume
-        </a>
-    </div>
-</div>
+                <div style="margin-top: 20px;">
+                    <a href="/assets/resume.pdf"
+                       target="_blank"
+                       style="display: inline-block; padding: 10px 18px; border-radius: 6px; text-decoration: none; border: 1px solid currentColor;">
+                        View Resume
+                    </a>
+                </div>
+            </div>
 
             <div style="flex: 1; min-width: 280px;">
                 <h1>About Me</h1>
 
                 <p>
                     I'm Carter Delavan-Hoover, a mechanical engineering student
-                    at the University of Maryland with an interest in space technology,
-                    manufacturing, robotics, and general mechanical design.
+                    at the University of Maryland with an interest in design,
+                    manufacturing, robotics, and renewable energy.
                 </p>
 
                 <p>
@@ -58,19 +53,9 @@ permalink: /about/
             </div>
 
         </div>
-
     </section>
 
-    <section class="about-section">
-        <h2>What I'm Interested In</h2>
-
-                <p>
-           I'm especially interested in engineering that pushes the boundaries of what we can learn and accomplish. Space technology has been a major source of inspiration for me: missions like DART, the Mars Reconnaissance Orbiter, Lucy, and the Parker Solar Probe showed me how engineering can turn ambitious questions into real, working systems. That same interest drives my enthusiasm for mechanical design, manufacturing, robotics, and other challenging projects.
-           </p>
-
-    </section>
-
-    <section class="about-section">
+    <section class="about-section" style="margin-top: 40px;">
         <h2>Skills</h2>
 
         <div class="features-list">
@@ -78,8 +63,8 @@ permalink: /about/
             <div class="feature-item">
                 <h3>CAD & Design</h3>
                 <p>
-                    SolidWorks · 3D Modeling · Fusion 360 · Mechanical Design ·
-                    3D Scanning · DFM
+                    SolidWorks · 3D Modeling · Mechanical Design ·
+                    3D Scanning · Design for Manufacturing
                 </p>
             </div>
 
@@ -87,7 +72,7 @@ permalink: /about/
                 <h3>Manufacturing</h3>
                 <p>
                     3D Printing · CNC Machining · Prototyping ·
-                    Mill · Lathe · Bandsaw · Assorted Metalworking Tools
+                    Fabrication · Hands-on Manufacturing
                 </p>
             </div>
 
@@ -95,7 +80,7 @@ permalink: /about/
                 <h3>Programming & Analysis</h3>
                 <p>
                     MATLAB · Python · Arduino · Data Analysis ·
-                    Excel VBA
+                    Numerical Methods
                 </p>
             </div>
 
@@ -105,6 +90,30 @@ permalink: /about/
                     Microcontrollers · Sensors · Motors ·
                     Analog Circuits · Embedded Systems
                 </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about-section" style="margin-top: 40px;">
+        <h2>What I'm Interested In</h2>
+
+        <p>
+            I'm especially interested in engineering that pushes the boundaries
+            of what we can learn and accomplish. Space technology has been a major
+            source of inspiration for me: missions like DART, the Mars
+            Reconnaissance Orbiter, Lucy, and the Parker Solar Probe showed me how
+            engineering can turn ambitious questions into real, working systems.
+            That same interest drives my enthusiasm for mechanical design,
+            manufacturing, robotics, and other challenging projects.
+        </p>
+    </section>
+
+</div>
+
+
+</div>
+
 
 
     </div>
