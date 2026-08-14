@@ -39,7 +39,7 @@ layout: default
       <p class="section-subtitle">A curated collection of my research and design</p>
     </div>
 
-```
+
 <div class="projects-grid-featured">
   {% assign featured_projects = site.projects | where: "featured", true | sort: "date" | reverse %}
   {% assign all_projects = site.projects | sort: "date" | reverse %}
@@ -155,7 +155,7 @@ layout: default
     </div>
   </div>
 </div>
-```
+
 
   </div>
 </div>
