@@ -5,22 +5,61 @@ layout: default
 <div class="hero-personal">
   <div class="container">
     <div class="hero-content">
-      <div class="hero-info-wrapper">
-        <div class="hero-text">
-           <h1 class="hero-name">{{ site.author | default: "Your Name" }}</h1>
-           <p class="hero-title">Mechanical Engineering Portfolio</p>
+
+  <div class="hero-info-wrapper">
+
+    <div class="hero-photo">
+      <img
+        src="/assets/images/carter.jpg"
+        alt="Carter Delavan-Hoover"
+        style="width: 190px; height: 190px; object-fit: cover; border-radius: 50%;"
+      >
+    </div>
+
+    <div class="hero-text">
+      <h1 class="hero-name">{{ site.author | default: "Your Name" }}</h1>
+      <p class="hero-title">Mechanical Engineering Portfolio</p>
+
+      <div style="margin-top: 20px; line-height: 1.8;">
+        <div>
+          <strong>Email:</strong>
+          <a href="mailto:carterjames.dh@gmail.com">
+            carterjames.dh@gmail.com
+          </a>
         </div>
-        
-        <div class="hero-actions">
-          <a href="{{ '/about/' | relative_url }}" class="btn-secondary">
-            About
+
+        <div>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/carter-dh"
+             target="_blank"
+             rel="noopener noreferrer">
+            linkedin.com/in/carter-dh
           </a>
-           <a href="mailto:{{ site.email }}" class="btn-secondary">
-            Contact
-          </a>
+        </div>
+
+        <div>
+          <strong>Phone:</strong>
+          <span><!-- Add your phone number here --></span>
         </div>
       </div>
     </div>
+
+    <div class="hero-actions">
+      <a href="{{ '/about/' | relative_url }}" class="btn-secondary">
+        About Me
+      </a>
+
+      <a href="/assets/resume.pdf"
+         class="btn-secondary"
+         target="_blank">
+        Resume
+      </a>
+    </div>
+
+  </div>
+</div>
+```
+
   </div>
 </div>
 
@@ -30,86 +69,89 @@ layout: default
       <h2>Portfolio</h2>
       <p class="section-subtitle">A curated collection of my research and design</p>
     </div>
-    
-    <div class="projects-grid-featured">
-      {% assign featured_projects = site.projects | where: "featured", true | sort: "date" | reverse %}
-      {% assign all_projects = site.projects | sort: "date" | reverse %}
-      {% assign combined_projects = featured_projects | concat: all_projects %}
-      {% assign unique_projects = combined_projects | uniq %}
-      {% for project in unique_projects limit: 9 %}
-        <div class="project-card-featured">
-          <div class="project-media">
-            {% if project.featured_image %}
-              <img src="{{ project.featured_image | relative_url }}" alt="{{ project.title }}" class="project-image">
-            {% elsif project.models.first %}
-              <div class="model-preview-small">
-                <model-viewer 
-                  src="{{ project.models.first.file | relative_url }}"
-                  alt="{{ project.title }}"
-                  camera-controls
-                  auto-rotate
-                  class="preview-model-small">
-                </model-viewer>
-              </div>
-            {% else %}
-              <div class="project-placeholder-small">
-                <i class="fas fa-robot"></i>
-              </div>
-            {% endif %}
-            
-            <div class="project-overlay">
-              <a href="{{ project.url | relative_url }}" class="project-link-overlay">
-                <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
+
+```
+<div class="projects-grid-featured">
+  {% assign featured_projects = site.projects | where: "featured", true | sort: "date" | reverse %}
+  {% assign all_projects = site.projects | sort: "date" | reverse %}
+  {% assign combined_projects = featured_projects | concat: all_projects %}
+  {% assign unique_projects = combined_projects | uniq %}
+  {% for project in unique_projects limit: 9 %}
+    <div class="project-card-featured">
+      <div class="project-media">
+        {% if project.featured_image %}
+          <img src="{{ project.featured_image | relative_url }}" alt="{{ project.title }}" class="project-image">
+        {% elsif project.models.first %}
+          <div class="model-preview-small">
+            <model-viewer 
+              src="{{ project.models.first.file | relative_url }}"
+              alt="{{ project.title }}"
+              camera-controls
+              auto-rotate
+              class="preview-model-small">
+            </model-viewer>
           </div>
-          
-          <div class="project-info-featured">
-            <div class="project-categories-small">
-              {% for category in project.categories limit:2 %}
-                <span class="category-tag-small">{{ category }}</span>
-              {% endfor %}
-            </div>
-            
-            <h3 class="project-title-featured">
-              <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-            </h3>
-            
-            <p class="project-excerpt-small">{{ project.description | truncate: 80 }}</p>
-            
-            <div class="project-features-small">
-              {% if project.models %}
-                <span class="feature-badge-small" title="3D Models">
-                  <i class="fas fa-cube"></i>
-                  {{ project.models.size }}
-                </span>
-              {% endif %}
-              
-              {% if project.schematics %}
-                <span class="feature-badge-small" title="Schematics">
-                  <i class="fas fa-microchip"></i>
-                  {{ project.schematics.size }}
-                </span>
-              {% endif %}
-              
-              {% if project.code_files %}
-                <span class="feature-badge-small" title="Code Files">
-                  <i class="fas fa-code"></i>
-                  {{ project.code_files.size }}
-                </span>
-              {% endif %}
-            </div>
+        {% else %}
+          <div class="project-placeholder-small">
+            <i class="fas fa-robot"></i>
           </div>
+        {% endif %}
+        
+        <div class="project-overlay">
+          <a href="{{ project.url | relative_url }}" class="project-link-overlay">
+            <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
-      {% endfor %}
+      </div>
+      
+      <div class="project-info-featured">
+        <div class="project-categories-small">
+          {% for category in project.categories limit:2 %}
+            <span class="category-tag-small">{{ category }}</span>
+          {% endfor %}
+        </div>
+        
+        <h3 class="project-title-featured">
+          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        </h3>
+        
+        <p class="project-excerpt-small">{{ project.description | truncate: 80 }}</p>
+        
+        <div class="project-features-small">
+          {% if project.models %}
+            <span class="feature-badge-small" title="3D Models">
+              <i class="fas fa-cube"></i>
+              {{ project.models.size }}
+            </span>
+          {% endif %}
+          
+          {% if project.schematics %}
+            <span class="feature-badge-small" title="Schematics">
+              <i class="fas fa-microchip"></i>
+              {{ project.schematics.size }}
+            </span>
+          {% endif %}
+          
+          {% if project.code_files %}
+            <span class="feature-badge-small" title="Code Files">
+              <i class="fas fa-code"></i>
+              {{ project.code_files.size }}
+            </span>
+          {% endif %}
+        </div>
+      </div>
     </div>
-    
-    <div class="showcase-actions">
-      <a href="{{ '/projects/' | relative_url }}" class="btn-primary-large">
-        <i class="fas fa-th"></i>
-        View All Projects
-      </a>
-    </div>
+  {% endfor %}
+</div>
+
+<div class="showcase-actions">
+  <a href="{{ '/projects/' | relative_url }}" class="btn-primary-large">
+    <i class="fas fa-th"></i>
+    View All Projects
+  </a>
+</div>
+```
+
   </div>
 </div>
 
@@ -117,44 +159,49 @@ layout: default
   <div class="container">
     <div class="skills-content">
       <h2>Technical Expertise</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3><i class="fas fa-robot"></i> Robotics</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">ROS</span>
-            <span class="skill-tag">Kinematics</span>
-            <span class="skill-tag">Path Planning</span>
-            <span class="skill-tag">SLAM</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-microchip"></i> Electronics</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Arduino</span>
-            <span class="skill-tag">ESP32</span>
-            <span class="skill-tag">PCB Design</span>
-            <span class="skill-tag">Sensors</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-code"></i> Programming</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">C/C++</span>
-            <span class="skill-tag">MATLAB</span>
-            <span class="skill-tag">JavaScript</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-cube"></i> CAD/Design</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">SolidWorks</span>
-            <span class="skill-tag">Fusion 360</span>
-            <span class="skill-tag">3D Printing</span>
-            <span class="skill-tag">KiCad</span>
-          </div>
-        </div>
+
+```
+  <div class="skills-grid">
+
+    <div class="skill-category">
+      <h3><i class="fas fa-cube"></i> CAD & Design</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">SolidWorks</span>
+        <span class="skill-tag">Fusion 360</span>
+        <span class="skill-tag">3D Modeling</span>
+        <span class="skill-tag">3D Scanning</span>
       </div>
     </div>
+
+    <div class="skill-category">
+      <h3><i class="fas fa-tools"></i> Manufacturing</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">3D Printing</span>
+        <span class="skill-tag">CNC Machining</span>
+        <span class="skill-tag">Prototyping</span>
+        <span class="skill-tag">Fabrication</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3><i class="fas fa-microchip"></i> Electronics</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Arduino</span>
+        <span class="skill-tag">ESP32</span>
+        <span class="skill-tag">Sensors</span>
+        <span class="skill-tag">Motors</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3><i class="fas fa-code"></i> Programming & Analysis</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">MATLAB</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Excel VBA</span>
+        <span class="skill-tag">Data Analysis</span>
+      </div>
+    </div>
+
   </div>
 </div>
