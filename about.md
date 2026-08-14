@@ -42,10 +42,6 @@ permalink: /about/
                     manufacturing, electronics, and mechanical systems.
                 </p>
 
-                </p>
-           I'm especially interested in engineering that pushes the boundaries of what we can learn and accomplish. Space technology has been a major source of inspiration for me: missions like DART, the Mars Reconnaissance Orbiter, Lucy, and the Parker Solar Probe showed me how engineering can turn ambitious questions into real, working systems. That same interest drives my enthusiasm for mechanical design, manufacturing, robotics, and other challenging projects.
-           </p>
-
                 <p>
                     Outside of engineering, I enjoy learning new things,
                     working on hands-on projects, and finding opportunities
@@ -60,12 +56,9 @@ permalink: /about/
     <section class="about-section">
         <h2>What I'm Interested In</h2>
 
-        <p>
-            I'm especially interested in space technology, manufacturing,
-            robotics, and general mechanical design. I enjoy projects where I can
-            work across disciplines and see a design progress from an idea
-            to a physical, working system.
-        </p>
+                </p>
+           I'm especially interested in engineering that pushes the boundaries of what we can learn and accomplish. Space technology has been a major source of inspiration for me: missions like DART, the Mars Reconnaissance Orbiter, Lucy, and the Parker Solar Probe showed me how engineering can turn ambitious questions into real, working systems. That same interest drives my enthusiasm for mechanical design, manufacturing, robotics, and other challenging projects.
+           </p>
 
     </section>
 
