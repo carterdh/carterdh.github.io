@@ -56,7 +56,7 @@ permalink: /about/
     <section class="about-section">
         <h2>What I'm Interested In</h2>
 
-                </p>
+                <p>
            I'm especially interested in engineering that pushes the boundaries of what we can learn and accomplish. Space technology has been a major source of inspiration for me: missions like DART, the Mars Reconnaissance Orbiter, Lucy, and the Parker Solar Probe showed me how engineering can turn ambitious questions into real, working systems. That same interest drives my enthusiasm for mechanical design, manufacturing, robotics, and other challenging projects.
            </p>
 
