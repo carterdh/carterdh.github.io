@@ -8,6 +8,12 @@ permalink: /about/
 
 <div class="about-content"> <div class="container">
 
+<style>
+    .about-section h3 {
+        font-size: 30px;
+    }
+</style>
+
     <section class="about-section">
         <div style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
 
@@ -94,7 +100,6 @@ permalink: /about/
                     Microcontrollers · Sensors · Motors ·
                     Analog Circuits · Embedded Systems
                 </p>
-            </div>
 
 
     </div>
