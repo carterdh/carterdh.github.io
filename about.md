@@ -56,7 +56,7 @@ permalink: /about/
             work across disciplines and see a design progress from an idea
             to a physical, working system.
         </p>
-    </section>
+
     </section>
 
     <section class="about-section">
@@ -95,13 +95,6 @@ permalink: /about/
                     Analog Circuits · Embedded Systems
                 </p>
             </div>
-
-        </div>
-
-
-
-
-</div>
 
 
     </div>
