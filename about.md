@@ -43,7 +43,8 @@ permalink: /about/
                 </p>
 
                 </p>
-                    I'm especially interested in engineering that pushes the boundaries of what we can learn and accomplish. Space technology                       has been a particularly important source of inspiration for me: missions like DART, the Mars Reconnaissance Orbiter,                        Lucy, and the Parker Solar Probe showed me how engineering can turn ambitious scientific questions into real, working                         systems. That same interest drives my broader enthusiasm for mechanical design, manufacturing, robotics, and other                             projects where engineering can turn challenging ideas into something tangible.
+           I'm especially interested in engineering that pushes the boundaries of what we can learn and accomplish. Space technology has been a major source of inspiration for me: missions like DART, the Mars Reconnaissance Orbiter, Lucy, and the Parker Solar Probe showed me how engineering can turn ambitious questions into real, working systems. That same interest drives my enthusiasm for mechanical design, manufacturing, robotics, and other challenging projects.
+           </p>
 
                 <p>
                     Outside of engineering, I enjoy learning new things,
