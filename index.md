@@ -5,58 +5,27 @@ layout: default
 <div class="hero-personal">
   <div class="container">
     <div class="hero-content">
+      <div class="hero-info-wrapper">
+        <div class="hero-photo">
+          <img src="/assets/images/carter.jpg" alt="Carter Delavan-Hoover" style="width: 190px; height: 190px; object-fit: cover; border-radius: 50%;">
+        </div>
 
 ```
-  <div class="hero-info-wrapper">
-
-    <div class="hero-photo">
-      <img
-        src="/assets/images/carter.jpg"
-        alt="Carter Delavan-Hoover"
-        style="width: 190px; height: 190px; object-fit: cover; border-radius: 50%;"
-      >
-    </div>
-
     <div class="hero-text">
       <h1 class="hero-name">{{ site.author | default: "Your Name" }}</h1>
       <p class="hero-title">Mechanical Engineering Portfolio</p>
 
       <div style="margin-top: 20px; line-height: 1.8;">
-        <div>
-          <strong>Email:</strong>
-          <a href="mailto:carterjames.dh@gmail.com">
-            carterjames.dh@gmail.com
-          </a>
-        </div>
-
-        <div>
-          <strong>LinkedIn:</strong>
-          <a href="https://www.linkedin.com/in/carter-dh"
-             target="_blank"
-             rel="noopener noreferrer">
-            linkedin.com/in/carter-dh
-          </a>
-        </div>
-
-        <div>
-          <strong>Phone:</strong>
-          <span><!-- Add your phone number here --></span>
-        </div>
+        <div><strong>Email:</strong> <a href="mailto:carterjames.dh@gmail.com">carterjames.dh@gmail.com</a></div>
+        <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/carter-dh" target="_blank" rel="noopener noreferrer">linkedin.com/in/carter-dh</a></div>
+        <div><strong>Phone:</strong> <!-- Add your phone number here --></div>
       </div>
     </div>
 
     <div class="hero-actions">
-      <a href="{{ '/about/' | relative_url }}" class="btn-secondary">
-        About Me
-      </a>
-
-      <a href="/assets/resume.pdf"
-         class="btn-secondary"
-         target="_blank">
-        Resume
-      </a>
+      <a href="{{ '/about/' | relative_url }}" class="btn-secondary">About Me</a>
+      <a href="/assets/resume.pdf" class="btn-secondary" target="_blank">Resume</a>
     </div>
-
   </div>
 </div>
 ```
@@ -84,60 +53,43 @@ layout: default
           <img src="{{ project.featured_image | relative_url }}" alt="{{ project.title }}" class="project-image">
         {% elsif project.models.first %}
           <div class="model-preview-small">
-            <model-viewer 
-              src="{{ project.models.first.file | relative_url }}"
-              alt="{{ project.title }}"
-              camera-controls
-              auto-rotate
-              class="preview-model-small">
-            </model-viewer>
+            <model-viewer src="{{ project.models.first.file | relative_url }}" alt="{{ project.title }}" camera-controls auto-rotate class="preview-model-small"></model-viewer>
           </div>
         {% else %}
           <div class="project-placeholder-small">
             <i class="fas fa-robot"></i>
           </div>
         {% endif %}
-        
+
         <div class="project-overlay">
           <a href="{{ project.url | relative_url }}" class="project-link-overlay">
             <i class="fas fa-arrow-right"></i>
           </a>
         </div>
       </div>
-      
+
       <div class="project-info-featured">
         <div class="project-categories-small">
           {% for category in project.categories limit:2 %}
             <span class="category-tag-small">{{ category }}</span>
           {% endfor %}
         </div>
-        
+
         <h3 class="project-title-featured">
           <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
         </h3>
-        
+
         <p class="project-excerpt-small">{{ project.description | remove: '...' }}</p>
-        
+
         <div class="project-features-small">
           {% if project.models %}
-            <span class="feature-badge-small" title="3D Models">
-              <i class="fas fa-cube"></i>
-              {{ project.models.size }}
-            </span>
+            <span class="feature-badge-small" title="3D Models"><i class="fas fa-cube"></i> {{ project.models.size }}</span>
           {% endif %}
-          
           {% if project.schematics %}
-            <span class="feature-badge-small" title="Schematics">
-              <i class="fas fa-microchip"></i>
-              {{ project.schematics.size }}
-            </span>
+            <span class="feature-badge-small" title="Schematics"><i class="fas fa-microchip"></i> {{ project.schematics.size }}</span>
           {% endif %}
-          
           {% if project.code_files %}
-            <span class="feature-badge-small" title="Code Files">
-              <i class="fas fa-code"></i>
-              {{ project.code_files.size }}
-            </span>
+            <span class="feature-badge-small" title="Code Files"><i class="fas fa-code"></i> {{ project.code_files.size }}</span>
           {% endif %}
         </div>
       </div>
@@ -163,7 +115,6 @@ layout: default
 
 ```
   <div class="skills-grid">
-
     <div class="skill-category">
       <h3><i class="fas fa-cube"></i> CAD & Design</h3>
       <div class="skill-tags">
@@ -203,7 +154,6 @@ layout: default
         <span class="skill-tag">Data Analysis</span>
       </div>
     </div>
-
   </div>
 </div>
 ```
