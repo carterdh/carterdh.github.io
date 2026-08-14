@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="hero-personal">
   <div class="container">
     <div class="hero-content">
@@ -79,7 +78,7 @@ layout: default
           <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
         </h3>
 
-        <p class="project-excerpt-small">{{ project.description | remove: '...' }}</p>
+        <p class="project-excerpt-small">{{ project.description }}</p>
 
         <div class="project-features-small">
           {% if project.models %}
