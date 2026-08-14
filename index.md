@@ -9,7 +9,7 @@ layout: default
           <img src="/assets/images/carter.jpg" alt="Carter Delavan-Hoover" style="width: 190px; height: 190px; object-fit: cover; border-radius: 50%;">
         </div>
 
-```
+
     <div class="hero-text">
       <h1 class="hero-name">{{ site.author | default: "Your Name" }}</h1>
       <p class="hero-title">Mechanical Engineering Portfolio</p>
@@ -27,7 +27,7 @@ layout: default
     </div>
   </div>
 </div>
-```
+
 
   </div>
 </div>
@@ -102,7 +102,7 @@ layout: default
     View All Projects
   </a>
 </div>
-```
+
 
   </div>
 </div>
@@ -112,7 +112,7 @@ layout: default
     <div class="skills-content">
       <h2>Technical Expertise</h2>
 
-```
+
   <div class="skills-grid">
     <div class="skill-category">
       <h3><i class="fas fa-cube"></i> CAD & Design</h3>
