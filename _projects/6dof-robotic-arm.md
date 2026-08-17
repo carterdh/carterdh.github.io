@@ -1,9 +1,9 @@
 ---
 layout: project
-title: "6-DOF Robotic Arm with Vision System"
-description: "An advanced 6-degree-of-freedom robotic arm with computer vision capabilities for object detection, picking, and precise placement tasks."
+title: "NASA L'SPACE Program"
+description: "I was the Lead Engineer for my team in the NASA L’SPACE program. In this program, my team was tasked with creating a full comprehensive mission design for a hypothetical mission exploring and studying lunar pit caves for possible future human habitation. Linked below is the full 300 page PDR."
 date: 2024-09-20
-categories: [Robotics, Computer Vision, Machine Learning, 3D Printing]
+categories: [Project integration, Siemens NX, Leadership, Risk Analysis]
 featured_image: "/assets/images/projects/robotic-arm/featured.jpg"
 github_url: "https://github.com/aojedao/6dof-robotic-arm"
 demo_url: "#"
