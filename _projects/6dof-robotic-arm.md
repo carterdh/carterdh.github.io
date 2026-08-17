@@ -2,7 +2,7 @@
 layout: project
 title: "NASA L'SPACE Program"
 description: "I was the Lead Engineer for my team in the NASA L’SPACE program. In this program, my team was tasked with creating a full comprehensive mission design for a hypothetical mission exploring and studying lunar pit caves for possible future human habitation. Linked below is the full 300 page PDR."
-date: 2024-09
+date: 2024-09-20
 categories: [Project integration, Siemens NX, Leadership, Risk Analysis]
 featured_image: "/assets/images/projects/lspace/lspace_image.jpg"
 github_url: ""
