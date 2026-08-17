@@ -5,7 +5,7 @@ layout: project-new
 title: "Autonomous Suspension System"
 description: "Design and development of a lightweight suspension system for a university planetary rover."
 
-date: 2026-08-17
+date: 2026-08-16
 
 categories:
   - Mechanical Design
