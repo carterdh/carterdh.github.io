@@ -101,15 +101,24 @@ permalink: /projects/
                             </span>
                         {% endif %}
                     </div>
-                    
                     <div class="project-meta">
-                        {% if project.date %}
+                        {% if project.start_date and project.end_date %}
+                            <span class="project-date">
+                                <i class="fas fa-calendar"></i>
+                                {{ project.start_date }} – {{ project.end_date }}
+                            </span>
+                        {% elsif project.start_date %}
+                            <span class="project-date">
+                                <i class="fas fa-calendar"></i>
+                                {{ project.start_date }}
+                            </span>
+                        {% elsif project.date %}
                             <span class="project-date">
                                 <i class="fas fa-calendar"></i>
                                 {{ project.date | date: "%B %Y" }}
                             </span>
                         {% endif %}
-                        
+                    
                         {% if project.github_url %}
                             <a href="{{ project.github_url }}" class="github-link" target="_blank">
                                 <i class="fab fa-github"></i>
