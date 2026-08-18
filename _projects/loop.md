@@ -2,6 +2,7 @@
 layout: project
 title: "UMD Loop Suspension"
 description: "I was a part of UMD Loop, a student team competing in the University Rover Challenge, where we design and build a rover capable of tackling complex mobility and scientific tasks. My role was on the suspension sub-team, where I focused on designing and refining the rover’s two-arm suspension system."
+role: "Suspension Team Memeber"
 start_date: "September 2024"
 end_date: "May 2026"
 categories: [SolidWorks, DFM, Manufacturing]
