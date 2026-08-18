@@ -15,7 +15,8 @@ layout: default
       <p class="hero-title">Mechanical Engineering Portfolio</p>
 
       <div style="margin-top: 20px; line-height: 1.8;">
-        <div><strong>Email:</strong> <a href="mailto:carterjames.dh@gmail.com">carterjames.dh@gmail.com</a></div>
+        <div><strong>Personal Email:</strong> <a href="mailto:carterjames.dh@gmail.com">carterjames.dh@gmail.com</a></div>
+        <div><strong>School Email:</strong> <a href="mailto:cdelava1@terpmail.umd.edu">cdelava1@terpmail.umd.edu</a></div>
         <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/carter-dh" target="_blank" rel="noopener noreferrer">linkedin.com/in/carter-dh</a></div>
         <div><strong>Phone:</strong> (301)-204-4924 </div>
         <div><strong>Location:</strong> Washington, D.C Area</div>
