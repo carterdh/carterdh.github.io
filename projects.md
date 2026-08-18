@@ -113,11 +113,7 @@ permalink: /projects/
                             </span>
                         {% endif %}
                     
-                        {% if project.github_url %}
-                            <a href="{{ project.github_url }}" class="github-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        {% endif %}
+
                     </div>
                 </div>
             </article>
