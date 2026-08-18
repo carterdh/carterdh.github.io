@@ -1163,8 +1163,8 @@ details.section-details .section-content {
 
 .project-info-item {
   display: grid;
-  grid-template-columns: 55px 1fr;
-  gap: 10px;
+  grid-template-columns: max-content 1fr;
+  column-gap: 12px;
   align-items: start;
 }
 
