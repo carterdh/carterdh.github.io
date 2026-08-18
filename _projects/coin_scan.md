@@ -2,9 +2,10 @@
 layout: project
 title: "Custom Coin Scanning and Design"
 description: "At TerrapinWorks, a customer asked me to scan their large clay coin model that they had modeled, then make it into a usable coin with a custom back designed by me. It required me to learn a lot of new skills in a short amount of time."
-start_date: "July1 1st 2024"
-end_date: "July 31st 2024"
-skills:
+start_date: "July 1st, 2024"
+end_date: "July 31st, 2024"
+role: "Scanning Technical Coordinator"
+skills: 
   - 3D Scanning
   - Blender
   - Laser Engraving
@@ -16,16 +17,10 @@ categories: [Blender, 3D Scanning, Problem Solving, Customer Relations]
 featured_image: "/assets/images/projects/coins/coins1.jpg"
 
 
-
-
-
-
 # Media gallery with images, videos, and GIFs
 gallery:
   - type: "image"
     file: "/assets/images/projects/coins/coins1.jpg"
-  - type: "image"
-    file: "/assets/images/projects/coins/coins2.jpg"
   - type: "image"
     file: "/assets/images/projects/coins/coins3.jpg"
   - type: "image"
