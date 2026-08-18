@@ -18,6 +18,7 @@ layout: default
         <div><strong>Email:</strong> <a href="mailto:carterjames.dh@gmail.com">carterjames.dh@gmail.com</a></div>
         <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/carter-dh" target="_blank" rel="noopener noreferrer">linkedin.com/in/carter-dh</a></div>
         <div><strong>Phone:</strong> (301)-204-4924 </div>
+        <div><strong>Location: Washington D.C Area</a></div>
       </div>
     </div>
 
