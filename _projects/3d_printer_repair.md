@@ -1,7 +1,7 @@
 ---
 layout: project
 
-title: "3D Printer Repair Guide"
+title: "3D Printer Repair Guide" 
 
 description: "I made a FDM 3d printer repair guide to assist employees at Terrapin Works with repairing issues with printers."
 
