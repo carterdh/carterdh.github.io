@@ -32,9 +32,10 @@ categories:
 # Main image used to represent the project elsewhere on the site
 featured_image: "/assets/images/carter.jpg"
 
-# Optional external links
-github_url: ""
-demo_url: ""
+
+pdfs:
+  - file: "/assets/files/3d_repair/3d_print_repair.pdf"
+    description: "3D Printer Repair Guide"
 
 ---
 
