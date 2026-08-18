@@ -30,7 +30,7 @@ categories:
   - Embedded Systems
 
 # Main image used to represent the project elsewhere on the site
-featured_image: "/assets/images/projects/carter.jpg"
+featured_image: "/assets/images/carter.jpg"
 
 # Optional external links
 github_url: ""
@@ -38,5 +38,7 @@ demo_url: ""
 
 ---
 
-##TEST
-#testing 123
+## TEST
+testing 123 blah blah
+# test2
+test againnnnn
