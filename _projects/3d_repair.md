@@ -35,7 +35,6 @@ featured_image: "/assets/images/carter.jpg"
 
 pdfs:
   - file: "/assets/files/3d_repair/3d_print_repair.pdf"
-    description: "3D Printer Repair Guide"
 
 ---
 
