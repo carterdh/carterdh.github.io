@@ -27,11 +27,11 @@ featured_image: "assets/images/projects/3d_printer_repair/prusa.jpg"
 
 downloads:
   -name: "3D Printer Repair Guide"
-  -file: "/assets/files/3d_repair/3d_print_repair.pdf"
+  -file: "assets/files/3d_repair/3d_print_repair.pdf"
   -type:"PDF"
 
 pdfs:
-  - file: "/assets/files/3d_repair/3d_print_repair.pdf"
+  - file: "assets/files/3d_repair/3d_print_repair.pdf"
 
 ---
 
