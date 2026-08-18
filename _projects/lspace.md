@@ -35,16 +35,17 @@ downloads:
     file: "/assets/files/lspace/PDR.pdf"
     type: "PDF"
 
-interactive_plot: true
-
-
-
-
-
 gallery:
   - type: "image"
     file: "/assets/images/projects/lspace/lspace_image.jpg"
     description: "Siemens NX preliminary CAD to showcase project proof of concept"
+  - type: "image"
+    file: "/assets/images/projects/lspace/surface_ops.jpg"
+    description: "Concept of operations of surface rover"
+  - type: "image"
+    file: "/assets/images/projects/lspace/subsurface_ops.jpg"
+    description: "Concept of operations of subsurface rover"
+    
 ---
 ## Overview
 
