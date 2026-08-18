@@ -27,8 +27,6 @@ categories:
 
 featured_image: "/assets/images/projects/lspace/lspace_image.jpg"
 
-github_url: ""
-demo_url: ""
 
 downloads:
   - name: "Preliminary Design Review"
