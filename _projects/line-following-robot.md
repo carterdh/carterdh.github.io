@@ -16,15 +16,6 @@ categories: [Blender, 3D Scanning, Problem Solving, Customer Relations]
 featured_image: "/assets/images/projects/coins/coins1.jpg"
 
 
-<!--
-# 3D Models - Support for STL, OBJ, GLTF, GLB formats
-models:
-  - file: "/assets/models/line-robot/chassis.gltf"
-    description: "3D printed robot chassis with integrated sensor mounts"
-  - file: "/assets/models/line-robot/wheel-assembly.gltf"
-    description: "Custom wheel assembly with encoder integration"
--->
-
 
 
 
