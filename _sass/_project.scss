@@ -1110,3 +1110,447 @@ details.section-details .section-content {
   color: var(--text-secondary);
   line-height: 1.6;
 }
+
+
+/* ================================================================
+   NEW PROJECT PAGE - LEFT SIDE INFORMATION SYSTEM
+   ================================================================ */
+
+/* Project intro */
+
+.project-intro {
+  margin-bottom: var(--spacing-lg);
+}
+
+.project-title-simple {
+  font-size: 2.5rem;
+  line-height: 1.15;
+  color: var(--text-primary);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.project-lead {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+
+/* ================================================================
+   PROJECT INFORMATION
+   ================================================================ */
+
+.project-info-section {
+  padding: var(--spacing-lg) 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.project-info-section > h3,
+.project-files-section > h3 {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.project-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.project-info-item {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  gap: var(--spacing-md);
+  align-items: start;
+}
+
+.project-info-label {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-top: 3px;
+}
+
+.project-info-value {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+/* ================================================================
+   SKILLS
+   ================================================================ */
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 4px 9px;
+
+  color: var(--text-secondary);
+  background-color: var(--surface-color);
+
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+
+  font-size: 0.78rem;
+  line-height: 1.2;
+}
+
+
+/* ================================================================
+   DOWNLOADS
+   ================================================================ */
+
+.project-files-section {
+  padding: var(--spacing-lg) 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.project-file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.project-file {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 10px 12px;
+
+  color: var(--text-primary);
+  background-color: var(--surface-color);
+
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-file:hover {
+  color: var(--text-primary);
+  background-color: var(--surface-color-hover);
+  border-color: var(--primary-color);
+  transform: translateX(3px);
+}
+
+.project-file-icon {
+  width: 30px;
+  min-width: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--primary-color);
+}
+
+.project-file-info {
+  flex: 1;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.project-file-name {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.project-file-type {
+  margin-top: 2px;
+
+  color: var(--text-muted);
+  font-size: 0.72rem;
+
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.project-file-download {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+
+  transition: color 0.2s ease;
+}
+
+.project-file:hover .project-file-download {
+  color: var(--primary-color);
+}
+
+
+/* ================================================================
+   MARKDOWN CONTENT
+   ================================================================ */
+
+.project-description-content {
+  padding: var(--spacing-lg) 0;
+
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.project-description-content > :first-child {
+  margin-top: 0;
+}
+
+.project-description-content h1,
+.project-description-content h2,
+.project-description-content h3,
+.project-description-content h4 {
+  color: var(--text-primary);
+}
+
+.project-description-content h1 {
+  font-size: 2rem;
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.project-description-content h2 {
+  font-size: 1.5rem;
+
+  margin-top: var(--spacing-2xl);
+  margin-bottom: var(--spacing-md);
+
+  padding-bottom: var(--spacing-sm);
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+.project-description-content h3 {
+  font-size: 1.15rem;
+
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.project-description-content h4 {
+  font-size: 1rem;
+
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.project-description-content p {
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+}
+
+.project-description-content ul,
+.project-description-content ol {
+  margin-bottom: var(--spacing-md);
+  padding-left: 1.5rem;
+}
+
+.project-description-content li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.project-description-content a {
+  color: var(--primary-color);
+}
+
+.project-description-content a:hover {
+  color: var(--primary-dark);
+}
+
+.project-description-content strong {
+  color: var(--text-primary);
+}
+
+.project-description-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  margin: var(--spacing-lg) auto;
+
+  border-radius: var(--radius-md);
+}
+
+.project-description-content blockquote {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-md) var(--spacing-lg);
+
+  color: var(--text-secondary);
+  background-color: var(--surface-color);
+
+  border-left: 3px solid var(--primary-color);
+}
+
+
+/* ================================================================
+   PROJECT LINKS
+   ================================================================ */
+
+.project-meta-bottom {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+
+  border-top: 1px solid var(--border-color);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.project-actions-small {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.btn-small {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px 12px;
+
+  background-color: var(--surface-color);
+
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+
+  color: var(--text-secondary);
+
+  text-decoration: none;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  transition: all 0.2s ease;
+}
+
+.btn-small:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.project-categories-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.category-tag-small {
+  padding: 3px 8px;
+
+  color: var(--text-muted);
+  background-color: var(--surface-color);
+
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+
+  font-size: 0.75rem;
+}
+
+
+/* ================================================================
+   RIGHT SIDE - SMALL ADJUSTMENTS ONLY
+   Existing 3D/model/gallery styling is preserved.
+   ================================================================ */
+
+.project-right-panel {
+  min-width: 0;
+}
+
+.project-media-group {
+  min-width: 0;
+}
+
+.media-gallery-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.media-gallery-stack .media-item {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.media-gallery-stack .media-item:last-child {
+  border-bottom: none;
+}
+
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+
+@media (max-width: 900px) {
+
+  .project-split-layout {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .project-left-panel {
+    order: 1;
+  }
+
+  .project-right-panel {
+    order: 2;
+  }
+
+  .project-title-simple {
+    font-size: 2.25rem;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .project-title-simple {
+    font-size: 2rem;
+  }
+
+  .project-lead {
+    font-size: 1rem;
+  }
+
+  .project-info-item {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  .project-info-label {
+    padding-top: 0;
+  }
+
+  .project-file {
+    padding: 9px 10px;
+  }
+
+}
