@@ -14,15 +14,7 @@ permalink: /projects/
 <div class="projects-page">
     <div class="container">
         
-        <!--
-        <!-- Filter Buttons -->
-        <div class="projects-filters" style="margin: 60px 0;">
-            <button class="filter-btn active" data-filter="all">All Works</button>
-            {% for category in site.project_categories %}
-                <button class="filter-btn" data-filter="{{ category.slug }}">{{ category.name }}</button>
-            {% endfor %}
-        </div>
-        -->
+
         
         <!-- Projects Grid -->
         <div class="projects-grid" id="projects-grid">
