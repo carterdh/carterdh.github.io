@@ -4,16 +4,17 @@ title: Projects
 permalink: /projects/
 ---
 
-<div class="projects-hero" style="padding: 100px 0; background: var(--background-color); border-bottom: 1px solid var(--border-color);">
+<div class="projects-hero" style="padding: 50px 0; background: var(--background-color); border-bottom: 1px solid var(--border-color);">
     <div class="container">
         <h1 style="color: var(--text-primary); font-size: var(--font-size-3xl); letter-spacing: -0.02em;">Archive</h1>
-        <p style="color: var(--text-secondary); opacity: 0.7; max-width: 500px; margin: 0 auto; font-weight: 300;">A list of personal or professional projects I have worked on over the years.</p>
+        <p style="color: var(--text-secondary); opacity: 0.7; max-width: 600px; margin: 0 auto; font-weight: 300;">A list of personal or professional projects I have worked on over the years.</p>
     </div>
 </div>
 
 <div class="projects-page">
     <div class="container">
         
+        <!--
         <!-- Filter Buttons -->
         <div class="projects-filters" style="margin: 60px 0;">
             <button class="filter-btn active" data-filter="all">All Works</button>
@@ -21,6 +22,7 @@ permalink: /projects/
                 <button class="filter-btn" data-filter="{{ category.slug }}">{{ category.name }}</button>
             {% endfor %}
         </div>
+        -->
         
         <!-- Projects Grid -->
         <div class="projects-grid" id="projects-grid">
