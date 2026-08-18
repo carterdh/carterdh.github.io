@@ -396,6 +396,70 @@ layout: default
 
                 </section>
 
+<!-- =====================================================
+                 PROJECT LINKS
+                 ===================================================== -->
+
+            {% if page.github_url or page.demo_url or page.categories %}
+
+            <section class="project-meta-bottom">
+
+                <div class="project-actions-small">
+
+                    {% if page.github_url %}
+
+                    <a
+                        href="{{ page.github_url }}"
+                        class="btn-small"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+
+                    {% endif %}
+
+
+                    {% if page.demo_url %}
+
+                    <a
+                        href="{{ page.demo_url }}"
+                        class="btn-small"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                        Demo
+                    </a>
+
+                    {% endif %}
+
+                </div>
+
+
+                {% if page.categories %}
+
+                <div class="project-categories-bottom">
+
+                    {% for category in page.categories %}
+
+                    <span class="category-tag-small">
+                        {{ category }}
+                    </span>
+
+                    {% endfor %}
+
+                </div>
+
+                {% endif %}
+
+            </section>
+
+            {% endif %}
+
+        </div>
+
 
            
             <!-- =========================================================
