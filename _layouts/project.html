@@ -605,10 +605,10 @@ layout: default
                         <iframe
                             src="{{ pdf.file | relative_url }}"
                             style="
-                                width: 150%;
+                                width: 125%;
                                 height: 800px;
-                                border: 1px solid var(--border-color);
-                                border-radius: var(--radius-md);
+                               <!-- border: 1px solid var(--border-color);
+                                border-radius: var(--radius-md); -->
                                 background: white;
                             "
                             title="{{ pdf.description | default: 'PDF Document' }}"
