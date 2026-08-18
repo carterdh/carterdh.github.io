@@ -6,7 +6,7 @@ layout: default
     <div class="hero-content">
       <div class="hero-info-wrapper">
         <div class="hero-photo">
-          <img src="/assets/images/carter.jpg" alt="Carter Delavan-Hoover" style="width: 190px; height: 190px; object-fit: cover; border-radius: 50%;">
+          <img src="/assets/images/carter.jpg" alt="Carter Delavan-Hoover" style="width: 220px; height: 220px; object-fit: cover; border-radius: 50%;">
         </div>
 
 
