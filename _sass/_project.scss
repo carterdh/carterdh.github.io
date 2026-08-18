@@ -1163,9 +1163,16 @@ details.section-details .section-content {
 
 .project-info-item {
   display: grid;
-  grid-template-columns: 75px 1fr;
-  gap: var(--spacing-md);
+  grid-template-columns: 55px 1fr;
+  gap: 10px;
   align-items: start;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-width: 0;
 }
 
 .project-info-label {
