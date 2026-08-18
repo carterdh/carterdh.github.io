@@ -16,7 +16,7 @@ skills:
 featured_image: "/assets/images/projects/loop/loop1.jpg"
 
 models:
-  - file: "/assets/files/loop/suspension_assem.STL"
+  - file: "/assets/files/loop/suspension_assem.glb"
     description: "Early suspension CAD"
 
 
