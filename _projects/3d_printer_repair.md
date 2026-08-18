@@ -23,7 +23,7 @@ categories:
   - Technical Documentation
 
 # Main image used to represent the project elsewhere on the site
-featured_image: "/assets/images/3d_printer_repair/prusa.jpg"
+featured_image: "/assets/images/projects/3d_printer_repair/prusa.jpg"
 
 downloads:
   -name: "3D Printer Repair Guide"
