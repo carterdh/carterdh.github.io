@@ -24,7 +24,7 @@ layout: default
 
     <div class="hero-actions">
       <a href="{{ '/about/' | relative_url }}" class="btn-secondary">About Me</a>
-      <a href="/assets/resume.pdf" class="btn-secondary" target="_blank">Resume</a>
+      <a href="/assets/Carter_Delavan-Hoover_Resume.pdf" class="btn-secondary" target="_blank">Resume</a>
     </div>
   </div>
 </div>
