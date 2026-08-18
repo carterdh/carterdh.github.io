@@ -62,15 +62,15 @@ gallery:
 
 I designed and built a six-degree-of-freedom robotic arm...
 
-## Mechanical Design
+# Mechanical Design
 
 I designed the arm in SolidWorks...
 
-## Manufacturing
+# Manufacturing
 
 The components were manufactured using...
 
-## Results
+# Results
 
 The final arm was able to...
 
