@@ -7,7 +7,7 @@ permalink: /projects/
 <div class="projects-hero" style="padding: 100px 0; background: var(--background-color); border-bottom: 1px solid var(--border-color);">
     <div class="container">
         <h1 style="color: var(--text-primary); font-size: var(--font-size-3xl); letter-spacing: -0.02em;">Archive</h1>
-        <p style="color: var(--text-secondary); opacity: 0.7; max-width: 600px; margin: 0 auto; font-weight: 300;">An index of robotics research, engineering prototypes, and design systems developed over the years.</p>
+        <p style="color: var(--text-secondary); opacity: 0.7; max-width: 500px; margin: 0 auto; font-weight: 300;">A list of personal or professional projects I have worked on over the years.</p>
     </div>
 </div>
 
