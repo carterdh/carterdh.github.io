@@ -577,7 +577,55 @@ layout: default
 
                 {% endif %}
 
+<!-- =====================================================
+     PDF DOCUMENTS
+     ===================================================== -->
 
+            {% if page.pdfs %}
+            
+            <section
+                class="project-media-group"
+                id="pdfs"
+            >
+            
+                <h4>Documents</h4>
+            
+                <div class="pdfs-stack">
+            
+                    {% for pdf in page.pdfs %}
+            
+                    <div class="pdf-item">
+            
+                        {% if pdf.description %}
+                        <h5>
+                            {{ pdf.description }}
+                        </h5>
+                        {% endif %}
+            
+                        <iframe
+                            src="{{ pdf.file | relative_url }}"
+                            style="
+                                width: 100%;
+                                height: 800px;
+                                border: 1px solid var(--border-color);
+                                border-radius: var(--radius-md);
+                                background: white;
+                            "
+                            title="{{ pdf.description | default: 'PDF Document' }}"
+                        >
+                        </iframe>
+            
+                    </div>
+            
+                    {% endfor %}
+            
+                </div>
+            
+            </section>
+            
+            {% endif %}
+
+                
                 <!-- =====================================================
                      DATA VISUALIZATIONS
                      ===================================================== -->
