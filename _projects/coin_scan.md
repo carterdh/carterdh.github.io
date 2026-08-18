@@ -2,8 +2,8 @@
 layout: project
 title: "Coin Scanning and Design"
 description: "At TerrapinWorks, a customer asked me to scan their large clay coin model that they had modeled, then make it into a usable coin with a custom back designed by me. It required me to learn a lot of new skills in a short amount of time."
-start_date: "July 1st, 2024"
-end_date: "July 31st, 2024"
+start_date: "July 1st, 2025"
+end_date: "July 31st, 2025"
 role: "Scanning Technical Coordinator"
 skills: 
   - 3D Scanning
