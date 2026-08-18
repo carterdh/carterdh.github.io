@@ -37,19 +37,7 @@ downloads:
 
 interactive_plot: true
 
-models:
-  - file: "/assets/models/robotic-arm/base.gltf"
-    description: "Robotic arm base with servo mounting points"
-  - file: "/assets/models/robotic-arm/upper-arm.gltf"
-    description: "Upper arm segment with gear reduction"
 
-schematics:
-  - file: "/assets/schematics/robotic-arm/control-system.svg"
-    description: "Main control system with microcontroller and servo drivers"
-  - file: "/assets/schematics/robotic-arm/power-distribution.svg"
-    description: "Power distribution for servos and control electronics"
-  - file: "/assets/schematics/robotic-arm/vision-module.svg"
-    description: "Camera module and processing unit connections"
 
 
 
@@ -60,26 +48,16 @@ gallery:
 ---
 ## Overview
 
-I designed and built a six-degree-of-freedom robotic arm...
+In Fall 2024, I participated in NASA’s L’SPACE Program, where my team developed a mission concept to explore the Marius Hills lunar pit — a potential entrance to a subsurface lava tube. Our goal was to engineer a deployable rover system capable of descending into the pit, mapping its interior geometry, and collecting geological and environmental data to evaluate its habitability potential for future human missions.
 
-# Mechanical Design
+We designed a two-stage rover architecture: a surface rover providing power, communications, and winch-based deployment, and a compact lower rover dedicated to pit-floor navigation, subsurface imaging, and in-situ sensing. This system enabled safe access to extreme terrain while maintaining continuous data and power flow to surface assets.
 
-I designed the arm in SolidWorks...
+## Roles and Responsibilities
 
-# Manufacturing
+I served as the Lead Systems Engineer, managing a 14-person team made up of engineering, science, and programmatics subteams. Within the engineering subteam of six, I was responsible for ensuring that the mechanical, thermal, and communication subsystems worked together within mission constraints. One of the biggest lessons I learned in this role was the importance of time management. Early on, we struggled to meet deadlines, which pushed me to create a detailed Gantt chart and emphasize accountability across the team. That structure ultimately kept us on track through design reviews and deliverables.
 
-The components were manufactured using...
+Beyond management, I played a central role in shaping the mission concept. The two-rover system we proposed was my idea: a large rover would anchor itself at the rim of the pit and lower a smaller rover down by cable. The cable also served as a power connection, allowing the smaller rover to remain linked to a deployable solar array placed on the surface by the larger rover. I created most of the CAD models for this design, including the solar array and system integration. The CAD was intended as a rough concept rather than a final design, but it provided a foundation for subsystem integration and communication across the team.
 
-# Results
+## Outcome
 
-The final arm was able to...
-
-files:
-  - name: "CAD Assembly"
-    file: "/assets/images/carter.jpg"
-
-  - name: "Technical Report"
-    file: "/assets/images/carter.jpg"
-
-  - name: "Source Code"
-    file: "/assets/images/carter.jpg"
+At the end of the semester, we submitted a Preliminary Design Review (PDR) and earned a 74%, which our mentor emphasized was near the top of the program, as very few teams break 80%. Attached to this page of my portfolio, you’ll find a picture of the CAD design and the full PDR document. This project gave me valuable experience balancing leadership and technical contributions, and it showed me how critical clear planning and communication are in multidisciplinary engineering teams.
