@@ -148,6 +148,7 @@ permalink: /projects/
     </div>
 </div>
 
+<!--
 <script>
 // Project filtering functionality
 document.addEventListener('DOMContentLoaded', function() {
@@ -179,3 +180,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+-->
