@@ -1,257 +1,837 @@
+
 ---
 layout: default
 ---
 
-
 <div class="project-content">
     <div class="container">
 
-        <div class="project-header-simple">
-            <h1 class="project-title-simple">{{ page.title }}</h1>
-        </div>
-
         <div class="project-split-layout">
-            <!-- Left Column: Text & Info -->
+
+            <!-- =========================================================
+                 LEFT COLUMN: PROJECT INFORMATION & CONTENT
+                 ========================================================= -->
             <div class="project-left-panel">
 
-                <!-- Overview / Description -->
-                <section class="project-section-clean" id="description">
-                    <h3>Overview</h3>
-                    <div class="project-description-content">
-                        <p class="project-lead">{{ page.description }}</p>
-                        {{ content }}
-                    </div>
+                <!-- Project Title -->
+                <section class="project-intro">
+
+                    <h1 class="project-title-simple">
+                        {{ page.title }}
+                    </h1>
+
+                    {% if page.description %}
+                    <p class="project-lead">
+                        {{ page.description }}
+                    </p>
+                    {% endif %}
+
                 </section>
 
 
+                <!-- =====================================================
+                     PROJECT INFORMATION
+                     ===================================================== -->
+                {% if page.start_date or page.end_date or page.role or page.skills %}
+                <section class="project-info-section">
 
-                <!-- Code Section (Collapsible) -->
-                {% if page.code_files %}
-                <section class="project-section-clean" id="code">
-                    <details class="code-details">
-                        <summary>Code Files</summary>
-                        <div class="code-list-container">
-                            {% for code_file in page.code_files %}
-                            <div class="code-file-wrapper">
-                                {% if code_file.content %}
-                                <details class="code-file-details">
-                                    <summary class="code-file-summary">
-                                        <span class="file-name"><i class="fas fa-code"></i> {{ code_file.name }}</span>
-                                        <div class="file-meta">
-                                            <span class="lang-tag">{{ code_file.language }}</span>
-                                            {% if code_file.download_url %}
-                                            <a href="{{ code_file.download_url }}" class="file-download-icon" download
-                                                title="Download"><i class="fas fa-download"></i></a>
-                                            {% endif %}
-                                        </div>
-                                    </summary>
-                                    <div class="code-block-content">
-                                        <pre><code class="language-{{ code_file.language }}">{{ code_file.content | escape }}</code></pre>
-                                    </div>
-                                </details>
-                                {% else %}
-                                <div class="code-file-item">
-                                    <i class="fas fa-code"></i> {{ code_file.name }}
-                                    {% if code_file.download_url %}
-                                    <a href="{{ code_file.download_url }}" download><i class="fas fa-download"></i></a>
-                                    {% endif %}
-                                </div>
+                    <h3>Project Information</h3>
+
+                    <div class="project-info-list">
+
+                        <!-- Date -->
+                        {% if page.start_date or page.end_date %}
+                        <div class="project-info-item">
+
+                            <span class="project-info-label">
+                                Date
+                            </span>
+
+                            <span class="project-info-value">
+
+                                {% if page.start_date %}
+                                    {{ page.start_date }}
                                 {% endif %}
-                            </div>
-                            {% endfor %}
+
+                                {% if page.start_date and page.end_date %}
+                                    –
+                                {% endif %}
+
+                                {% if page.end_date %}
+                                    {{ page.end_date }}
+                                {% endif %}
+
+                            </span>
+
                         </div>
-                    </details>
+                        {% endif %}
+
+
+                        <!-- Role -->
+                        {% if page.role %}
+                        <div class="project-info-item">
+
+                            <span class="project-info-label">
+                                Role
+                            </span>
+
+                            <span class="project-info-value">
+                                {{ page.role }}
+                            </span>
+
+                        </div>
+                        {% endif %}
+
+
+                        <!-- Skills -->
+                        {% if page.skills %}
+                        <div class="project-info-item">
+
+                            <span class="project-info-label">
+                                Skills
+                            </span>
+
+                            <div class="project-info-value skill-tags">
+
+                                {% for skill in page.skills %}
+
+                                <span class="skill-tag">
+                                    {{ skill }}
+                                </span>
+
+                                {% endfor %}
+
+                            </div>
+
+                        </div>
+                        {% endif %}
+
+                    </div>
+
                 </section>
                 {% endif %}
 
-                <!-- Components & Materials -->
+
+                <!-- =====================================================
+                     PROJECT DOWNLOADS
+                     ===================================================== -->
+                {% if page.downloads or page.code_files %}
+
+                <section class="project-files-section">
+
+                    <h3>Downloads</h3>
+
+                    <div class="project-file-list">
+
+                        <!-- New Downloads System -->
+                        {% if page.downloads %}
+
+                            {% for file in page.downloads %}
+
+                            <a
+                                href="{{ file.file | relative_url }}"
+                                class="project-file"
+                                download
+                            >
+
+                                <div class="project-file-icon">
+
+                                    {% if file.type == "CAD" or file.type == "STEP" or file.type == "STL" %}
+                                        <i class="fas fa-cube"></i>
+
+                                    {% elsif file.type == "Code" %}
+                                        <i class="fas fa-code"></i>
+
+                                    {% elsif file.type == "PDF" or file.type == "Drawing" %}
+                                        <i class="fas fa-file-pdf"></i>
+
+                                    {% else %}
+                                        <i class="fas fa-file"></i>
+                                    {% endif %}
+
+                                </div>
+
+
+                                <div class="project-file-info">
+
+                                    <span class="project-file-name">
+                                        {{ file.name }}
+                                    </span>
+
+                                    {% if file.type %}
+                                    <span class="project-file-type">
+                                        {{ file.type }}
+                                    </span>
+                                    {% endif %}
+
+                                </div>
+
+
+                                <div class="project-file-download">
+                                    <i class="fas fa-download"></i>
+                                </div>
+
+                            </a>
+
+                            {% endfor %}
+
+                        {% endif %}
+
+
+                        <!-- =================================================
+                             BACKWARDS COMPATIBILITY WITH EXISTING CODE FILES
+                             ================================================= -->
+                        {% if page.code_files %}
+
+                            {% for code_file in page.code_files %}
+
+                            {% if code_file.download_url %}
+
+                            <a
+                                href="{{ code_file.download_url }}"
+                                class="project-file"
+                                download
+                            >
+
+                                <div class="project-file-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+
+                                <div class="project-file-info">
+
+                                    <span class="project-file-name">
+                                        {{ code_file.name }}
+                                    </span>
+
+                                    {% if code_file.language %}
+                                    <span class="project-file-type">
+                                        {{ code_file.language }}
+                                    </span>
+                                    {% endif %}
+
+                                </div>
+
+                                <div class="project-file-download">
+                                    <i class="fas fa-download"></i>
+                                </div>
+
+                            </a>
+
+                            {% endif %}
+
+                            {% endfor %}
+
+                        {% endif %}
+
+                    </div>
+
+                </section>
+
+                {% endif %}
+
+
+                <!-- =====================================================
+                     CODE FILES
+                     ===================================================== -->
+
+                {% if page.code_files %}
+
+                <section class="project-code-section" id="code">
+
+                    <details class="code-details">
+
+                        <summary>
+                            Code Files
+                        </summary>
+
+                        <div class="code-list-container">
+
+                            {% for code_file in page.code_files %}
+
+                            <div class="code-file-wrapper">
+
+                                {% if code_file.content %}
+
+                                <details class="code-file-details">
+
+                                    <summary class="code-file-summary">
+
+                                        <span class="file-name">
+                                            <i class="fas fa-code"></i>
+                                            {{ code_file.name }}
+                                        </span>
+
+                                        <div class="file-meta">
+
+                                            {% if code_file.language %}
+                                            <span class="lang-tag">
+                                                {{ code_file.language }}
+                                            </span>
+                                            {% endif %}
+
+                                            {% if code_file.download_url %}
+                                            <a
+                                                href="{{ code_file.download_url }}"
+                                                class="file-download-icon"
+                                                download
+                                                title="Download"
+                                            >
+                                                <i class="fas fa-download"></i>
+                                            </a>
+                                            {% endif %}
+
+                                        </div>
+
+                                    </summary>
+
+
+                                    <div class="code-block-content">
+
+                                        <pre><code class="language-{{ code_file.language }}">{{ code_file.content | escape }}</code></pre>
+
+                                    </div>
+
+                                </details>
+
+                                {% else %}
+
+                                <div class="code-file-item">
+
+                                    <i class="fas fa-code"></i>
+
+                                    {{ code_file.name }}
+
+                                    {% if code_file.download_url %}
+
+                                    <a
+                                        href="{{ code_file.download_url }}"
+                                        download
+                                    >
+                                        <i class="fas fa-download"></i>
+                                    </a>
+
+                                    {% endif %}
+
+                                </div>
+
+                                {% endif %}
+
+                            </div>
+
+                            {% endfor %}
+
+                        </div>
+
+                    </details>
+
+                </section>
+
+                {% endif %}
+
+
+                <!-- =====================================================
+                     COMPONENTS & MATERIALS
+                     ===================================================== -->
+
                 {% if page.components %}
-                <section class="project-section-clean" id="components" style="margin-top: var(--spacing-lg);">
+
+                <section
+                    class="project-components-section"
+                    id="components"
+                >
+
                     <h3>Components & Materials</h3>
+
                     <table class="components-table">
+
                         <thead>
+
                             <tr>
                                 <th>Component</th>
                                 <th>Qty</th>
                             </tr>
+
                         </thead>
+
                         <tbody>
+
                             {% for component in page.components %}
+
                             <tr>
-                                <td>{{ component.name }}</td>
-                                <td class="component-qty">{% if component.quantity %}x{{ component.quantity }}{% endif
-                                    %}</td>
+
+                                <td>
+                                    {{ component.name }}
+                                </td>
+
+                                <td class="component-qty">
+
+                                    {% if component.quantity %}
+                                        x{{ component.quantity }}
+                                    {% endif %}
+
+                                </td>
+
                             </tr>
+
                             {% endfor %}
+
                         </tbody>
+
                     </table>
+
                 </section>
+
                 {% endif %}
 
-                <!-- Meta / Actions (Moved to bottom of left) -->
-                <div class="project-meta-bottom">
+
+                <!-- =====================================================
+                     MARKDOWN PROJECT CONTENT
+                     ===================================================== -->
+
+                <section
+                    class="project-description-content"
+                    id="description"
+                >
+
+                    {{ content }}
+
+                </section>
+
+
+                <!-- =====================================================
+                     PROJECT LINKS
+                     ===================================================== -->
+
+                {% if page.github_url or page.demo_url or page.categories %}
+
+                <section class="project-meta-bottom">
 
                     <div class="project-actions-small">
+
                         {% if page.github_url %}
-                        <a href="{{ page.github_url }}" class="btn-small" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
+
+                        <a
+                            href="{{ page.github_url }}"
+                            class="btn-small"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fab fa-github"></i>
+                            GitHub
                         </a>
+
                         {% endif %}
+
 
                         {% if page.demo_url %}
-                        <a href="{{ page.demo_url }}" class="btn-small" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Demo
+
+                        <a
+                            href="{{ page.demo_url }}"
+                            class="btn-small"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
                         </a>
+
                         {% endif %}
+
                     </div>
 
+
+                    {% if page.categories %}
+
                     <div class="project-categories-bottom">
+
                         {% for category in page.categories %}
-                        <span class="category-tag-small">{{ category }}</span>
+
+                        <span class="category-tag-small">
+                            {{ category }}
+                        </span>
+
                         {% endfor %}
+
                     </div>
-                </div>
+
+                    {% endif %}
+
+                </section>
+
+                {% endif %}
 
             </div>
 
-            <!-- Right Column: Media -->
+
+            <!-- =========================================================
+                 RIGHT COLUMN: MEDIA
+                 KEEPING EXISTING FUNCTIONALITY
+                 ========================================================= -->
+
             <div class="project-right-panel">
 
 
+                <!-- =====================================================
+                     3D MODELS
+                     ===================================================== -->
 
-                <!-- 3D Models Section -->
                 {% if page.models %}
-                <section class="project-media-group" id="models">
+
+                <section
+                    class="project-media-group"
+                    id="models"
+                >
+
                     <div class="models-grid-compact">
+
                         {% for model in page.models %}
+
                         <div class="model-viewer-container">
-                            <model-viewer src="{{ model.file | relative_url }}"
-                                alt="{{ model.description | default: page.title }}" camera-controls
+
+                            <model-viewer
+                                src="{{ model.file | relative_url }}"
+                                alt="{{ model.description | default: page.title }}"
+                                camera-controls
                                 auto-rotate="{{ site.models.auto_rotate | default: false }}"
                                 background-color="{{ site.models.default_background | default: '#f0f0f0' }}"
-                                shadow-intensity="1" class="model-viewer">
+                                shadow-intensity="1"
+                                class="model-viewer"
+                            >
                             </model-viewer>
+
                         </div>
+
                         {% endfor %}
+
                     </div>
+
                 </section>
+
                 {% endif %}
 
-                <!-- Media Gallery -->
+
+                <!-- =====================================================
+                     MEDIA GALLERY
+                     ===================================================== -->
+
                 {% if page.gallery %}
-                <section class="project-media-group" id="gallery">
+
+                <section
+                    class="project-media-group"
+                    id="gallery"
+                >
+
                     <div class="media-gallery-stack">
+
                         {% for media in page.gallery %}
+
                         <div class="media-item">
+
                             {% assign file_extension = media.file | split: '.' | last | downcase %}
-                            {% if file_extension == 'mp4' or file_extension == 'webm' or file_extension == 'avi' %}
-                            <video controls class="gallery-video">
-                                <source src="{{ media.file | relative_url }}" type="video/{{ file_extension }}">
+
+
+                            {% if file_extension == 'mp4'
+                               or file_extension == 'webm'
+                               or file_extension == 'avi' %}
+
+                            <video
+                                controls
+                                class="gallery-video"
+                            >
+
+                                <source
+                                    src="{{ media.file | relative_url }}"
+                                    type="video/{{ file_extension }}"
+                                >
+
                                 Your browser does not support the video tag.
+
                             </video>
+
                             {% else %}
-                            <img src="{{ media.file | relative_url }}"
-                                alt="{{ media.description | default: page.title }}" class="gallery-image" data-zoomable>
+
+                            <img
+                                src="{{ media.file | relative_url }}"
+                                alt="{{ media.description | default: page.title }}"
+                                class="gallery-image"
+                                data-zoomable
+                            >
+
                             {% endif %}
+
+
                             {% if media.description %}
-                            <p class="media-caption">{{ media.description }}</p>
+
+                            <p class="media-caption">
+                                {{ media.description }}
+                            </p>
+
                             {% endif %}
+
                         </div>
+
                         {% endfor %}
+
                     </div>
+
                 </section>
+
                 {% endif %}
 
-                <!-- Visualizations (Interactive HTML Plots) -->
+
+                <!-- =====================================================
+                     DATA VISUALIZATIONS
+                     ===================================================== -->
+
                 {% if page.visualizations %}
-                <section class="project-media-group" id="visualizations">
-                    <h4 style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); border-bottom: 2px solid var(--accent-color); padding-bottom: var(--spacing-sm); margin: 0 0 var(--spacing-md) 0;">Data Visualizations</h4>
+
+                <section
+                    class="project-media-group"
+                    id="visualizations"
+                >
+
+                    <h4
+                        style="
+                            font-size: 1.2rem;
+                            text-transform: uppercase;
+                            letter-spacing: 0.1em;
+                            color: var(--text-muted);
+                            border-bottom: 2px solid var(--accent-color);
+                            padding-bottom: var(--spacing-sm);
+                            margin: 0 0 var(--spacing-md) 0;
+                        "
+                    >
+                        Data Visualizations
+                    </h4>
+
+
                     <div class="visualizations-stack">
+
                         {% for viz in page.visualizations %}
-                        <div class="visualization-item" style="margin-bottom: var(--spacing-lg); padding: var(--spacing-md); background: var(--surface-color); border-left: 4px solid var(--accent-color); border-radius: var(--radius-lg);">
-                            <h5 style="margin-top: 0; margin-bottom: var(--spacing-sm); font-size: 1rem; color: var(--text-primary); font-weight: 600; letter-spacing: 0.05em;">{{ viz.description }}</h5>
-                            <iframe src="{{ viz.file | relative_url }}"
-                                style="width: 100%; height: 600px; border: 1px solid var(--border-color); border-radius: var(--radius-md); box-shadow: 0 2px 8px rgba(0,0,0,0.1);"
-                                title="{{ viz.description }}"></iframe>
+
+                        <div
+                            class="visualization-item"
+                            style="
+                                margin-bottom: var(--spacing-lg);
+                                padding: var(--spacing-md);
+                                background: var(--surface-color);
+                                border-left: 4px solid var(--accent-color);
+                                border-radius: var(--radius-lg);
+                            "
+                        >
+
+                            <h5
+                                style="
+                                    margin-top: 0;
+                                    margin-bottom: var(--spacing-sm);
+                                    font-size: 1rem;
+                                    color: var(--text-primary);
+                                    font-weight: 600;
+                                    letter-spacing: 0.05em;
+                                "
+                            >
+                                {{ viz.description }}
+                            </h5>
+
+
+                            <iframe
+                                src="{{ viz.file | relative_url }}"
+                                style="
+                                    width: 100%;
+                                    height: 600px;
+                                    border: 1px solid var(--border-color);
+                                    border-radius: var(--radius-md);
+                                    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                                "
+                                title="{{ viz.description }}"
+                            >
+                            </iframe>
+
                         </div>
+
                         {% endfor %}
+
                     </div>
+
                 </section>
+
                 {% endif %}
 
-                <!-- Plotly for custom plots -->
+
+                <!-- =====================================================
+                     PLOTLY CUSTOM PLOT SUPPORT
+                     ===================================================== -->
+
                 {% if page.custom_plot %}
+
                 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
                 {% endif %}
 
-                <!-- Interactive Data Plot (only if page has interactive_plot: true) -->
+
+                <!-- =====================================================
+                     INTERACTIVE DATA PLOT
+                     ===================================================== -->
+
                 {% if page.interactive_plot %}
+
                 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
                 <div class="project-media-group">
+
                     {% include interactive-plot.html %}
+
                 </div>
+
                 {% endif %}
 
-                <!-- Custom Plot Include -->
+
+                <!-- =====================================================
+                     CUSTOM PLOT INCLUDE
+                     ===================================================== -->
+
                 {% if page.custom_plot %}
+
                 <div class="project-media-group">
+
                     {% include {{ page.custom_plot }} %}
+
                 </div>
+
                 {% endif %}
 
-                <!-- Circuit Schematics -->
+
+                <!-- =====================================================
+                     CIRCUIT SCHEMATICS
+                     ===================================================== -->
+
                 {% if page.schematics %}
-                <section class="project-media-group" id="schematics">
+
+                <section
+                    class="project-media-group"
+                    id="schematics"
+                >
+
                     <h4>Schematics</h4>
+
                     <div class="schematics-stack">
+
                         {% for schematic in page.schematics %}
+
                         <div class="schematic-container">
-                            <img src="{{ schematic.file | relative_url }}"
+
+                            <img
+                                src="{{ schematic.file | relative_url }}"
                                 alt="{{ schematic.description | default: 'Circuit Schematic' }}"
-                                class="schematic-image">
+                                class="schematic-image"
+                            >
+
                         </div>
+
                         {% endfor %}
+
                     </div>
+
+                </section>
+
+                {% endif %}
+
             </div>
-            </section>
-            {% endif %}
 
         </div>
+
     </div>
 </div>
-</div>
 
-<!-- Project Navigation -->
+
+<!-- =============================================================
+     PROJECT NAVIGATION
+     ============================================================= -->
+
 <div class="project-navigation">
+
     <div class="container">
+
         {% assign project_array = site.projects | sort: 'date' %}
+
         {% for project in project_array %}
-        {% if project.url == page.url %}
-        {% assign current_index = forloop.index %}
-        {% break %}
-        {% endif %}
+
+            {% if project.url == page.url %}
+
+                {% assign current_index = forloop.index %}
+
+                {% break %}
+
+            {% endif %}
+
         {% endfor %}
 
+
         <div class="nav-links">
+
+
+            <!-- Previous Project -->
+
             {% if current_index > 1 %}
-            {% assign prev_project = project_array[current_index | minus: 2] %}
-            <a href="{{ prev_project.url | relative_url }}" class="nav-link prev">
-                <i class="fas fa-chevron-left"></i>
-                <span>{{ prev_project.title }}</span>
-            </a>
+
+                {% assign prev_project = project_array[current_index | minus: 2] %}
+
+                <a
+                    href="{{ prev_project.url | relative_url }}"
+                    class="nav-link prev"
+                >
+
+                    <i class="fas fa-chevron-left"></i>
+
+                    <span>
+                        {{ prev_project.title }}
+                    </span>
+
+                </a>
+
             {% endif %}
 
-            <a href="{{ '/projects/' | relative_url }}" class="nav-link all-projects">
+
+            <!-- All Projects -->
+
+            <a
+                href="{{ '/projects/' | relative_url }}"
+                class="nav-link all-projects"
+            >
+
                 <i class="fas fa-th"></i>
-                <span>All Projects</span>
+
+                <span>
+                    All Projects
+                </span>
+
             </a>
 
-            {% if current_index < project_array.size %} {% assign next_project=project_array[current_index] %} <a
-                href="{{ next_project.url | relative_url }}" class="nav-link next">
-                <span>{{ next_project.title }}</span>
-                <i class="fas fa-chevron-right"></i>
+
+            <!-- Next Project -->
+
+            {% if current_index < project_array.size %}
+
+                {% assign next_project = project_array[current_index] %}
+
+                <a
+                    href="{{ next_project.url | relative_url }}"
+                    class="nav-link next"
+                >
+
+                    <span>
+                        {{ next_project.title }}
+                    </span>
+
+                    <i class="fas fa-chevron-right"></i>
+
                 </a>
-                {% endif %}
+
+            {% endif %}
+
+
         </div>
+
     </div>
+
 </div>
