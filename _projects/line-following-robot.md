@@ -2,7 +2,8 @@
 layout: project
 title: "Autonomous Line Following Robot"
 description: "A sophisticated line-following robot built with Arduino Uno, featuring PID control, obstacle detection, and wireless monitoring capabilities."
-date: 2024-10-15
+start_date: "October 2024"
+end_date: "December 2024"
 categories: [Robotics, Arduino, Mechatronics]
 featured_image: "/assets/images/projects/line-robot/featured.jpg"
 github_url: "https://github.com/aojedao/line-following-robot"
