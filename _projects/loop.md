@@ -31,10 +31,15 @@ gallery:
 
 ## Overview
 
-UMD Loop is a student team that competes in the University Rover Challenge. I am on the suspension sub-team, so my job is to design everything between the chassis and the wheels. In the 2025 season, we are designing a material dampener system to distribute loads across the rover and help it survive extreme drops.
+UMD Loop is a student team that competes in the University Rover Challenge. I was on the suspension sub-team, so my job was to design everything between the chassis and the wheels. In the 2025 season, we were designing a material dampener system to distribute loads across the rover and help it survive extreme drops. Unfortunately, due to weight concerns this dampener system was scrapped in favor of swerve steering modules.
 
 ## Design
-The biggest challenge of this design was optimizing the dimensions and elastic modulus of the material dampener to compress to the desired size when under a static load and properly distribute the load when under a dynamic/shock load. To preform this optimization, I first solved the system statically to reveal the relationships between the normal force applied on the wheels and the lever-arm compression of the foam. I then wrote a MATLAB script to optimize the dimensions of the foam in order to compress to the desired angular dimensions that give us the required wheelbase and ride height. It gives me a series of combinations of dimensions paired with a calculated elastic modulus. I was then able to match the calculated elastic moduli to real datasheets and choose the correct dampener. 
+
+The biggest challenge of this design was optimizing the dimensions and elastic modulus of the material dampener to compress to the desired size when under a static load and properly distribute the load when under a dynamic/shock load. To preform this optimization, I first solved the system statically to reveal the relationships between the normal force applied on the wheels and the lever-arm compression of the foam. Through this process and with consultation with a professor, I realized that the system had far too many variables to solve by hand, so I decided so set up an FEA and test multiple materials to test how they would work in various environments. Multiple materials were chosen as candidates and a mounting system was in preliminary design phases when we were informed the system would be sacrificed.
+
+## Outcome
+
+Although the material dampener was scrapped, the suspension itself still needed to be present to support the chassis and the differential bar. Reverting to (and slightly altering) an earlier design was the agreed upon solution. Parts were ordered from McMaster Carr and bent sheet metal parts were ordered from SendCutSend. The linkages were cut to size and the suspension was assembled and mounted by me for the final competition.
 
 
 
