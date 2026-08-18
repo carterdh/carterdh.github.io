@@ -38,7 +38,10 @@ demo_url: ""
 
 ---
 
-## TEST
-testing 123 blah blah
-# test2
-test againnnnn
+## Overview
+
+I designed and built a six-degree-of-freedom robotic arm...
+
+## Mechanical Design
+
+I designed the arm in SolidWorks...
