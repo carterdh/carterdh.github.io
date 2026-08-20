@@ -23,6 +23,9 @@ featured_image: "/assets/images/projects/tsmc/tsmc.jpg"
 gallery:
   - type: "image"
     file: "/assets/images/projects/tsmc/tsmc.jpg"
+  - type: "image"
+    file: "/assets/images/projects/tsmc/proz.jpg"
+    description: "The main coater used by Lithography Track team"
 
 ---
 
