@@ -8,13 +8,15 @@ start_date: "June 2026"
 end_date: "August 2026"
 role: "NanoLithography Equipment Engineer Intern"
 skills:
-  - SolidWorks
-  - CAD
-  - 3D Printing
+  - Semiconductors
+  - Excel VBA
+  - Project Management
+  - Personnel Management
+  - Experiment Design
 
 categories:
-  - Robotics
-  - Mechanical Design
+  - Semiconductors
+  - Management
 
 featured_image: "/assets/images/projects/tsmc/tsmc.jpg"
 
@@ -29,9 +31,12 @@ gallery:
 
 I interned at TSMC Arizona during the summer of 2026 on the Lithography Track team, responsible for one of the highest-throughput processes in the facility. The team operates and maintains the equipment used to apply highly uniform photoresist coatings to semiconductor wafers. Track equipment engineers focus on driving nanoscale particle contamination toward zero, maintaining precise coating thickness and uniformity, and continuously monitoring equipment and process data to identify anomalies that could affect wafer quality and yield.
 
-Interns are assigned a project b their department to work on throughout the summer. In my case, I was given two projects. Both are discussed in detail below.
+Interns are assigned a project by their department to work on throughout the summer. In my case, I was given two projects. Both are discussed in detail below.
 
 DISCLAIMER: Due to TSMC's Proprietary Information Protection (PIP) policies, I am not allowed to give many specifics on my projects. Additionally, I was not able to save any documents related to my projects, including the presentation I made for the end of the internship. All explanation of my internship will be explained narratively.
+
+## Pump Recycling Project
+
 
 
 
