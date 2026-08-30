@@ -499,6 +499,14 @@
   display: block;
 }
 
+.gallery-youtube {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: var(--radius-md);
+  display: block;
+}
+
 .media-caption {
   padding: var(--spacing-sm) var(--spacing-md);
   color: var(--text-secondary);
