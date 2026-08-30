@@ -524,7 +524,12 @@ id="gallery"
 {% for media in page.gallery %} 
  
 <div class="media-item"> 
+
+<p style="color: red;">
+  TYPE={{ media.type }} | FILE={{ media.file }}
+</p>
  
+    
 {% if media.type == 'youtube' %}
 
 {% assign youtube_id = media.file | split: 'v=' | last | split: '&' | first %}
