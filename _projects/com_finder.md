@@ -42,10 +42,10 @@
 gallery:
   - file: "/assets/images/projects/com/com1.jpeg"
     description: "Center of mass finder"
-
   - type: "youtube"
     file: "https://youtu.be/iR6r2DKwyKw"
     description: "Center of mass finder demonstration"
+    
 ---
 ## Project Overview
 
