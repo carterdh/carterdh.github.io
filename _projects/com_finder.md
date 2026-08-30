@@ -39,7 +39,13 @@
    - file: "/assets/files/com/full_assem.glb"
      description: "Complete assembly"
 
+gallery:
+  - file: "/assets/images/projects/com/com1.jpeg"
+    description: "Center of mass finder"
 
+  - type: "youtube"
+    file: "https://www.youtube.com/watch?v=PuoGqbLbRhc"
+    description: "Center of mass finder demonstration"
 ---
 ## Project Overview
 
