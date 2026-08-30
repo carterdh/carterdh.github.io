@@ -50,6 +50,18 @@
 
     
 ---
-## Project Overview
+## Overview
 
-Write the actual project description here.
+For the final of my mechatronics class, our prompt was "make something cool with Arduino that uses sensing, logic, and actuation." I decided to make a center of mass finder with an arm that moves to the center of mass that allows the user to put a sharpie mark at the center. 
+
+On the edges of the plate are four load cells, constantly outputting data based on their deflection. The arm is made up of two stepper motors and simple two linkage inverse kinematics to move the end effector to the correct location on the plate.
+
+
+## Calibration
+
+
+## Load Cell Troubleshooting
+
+My biggest challenge in this project was the load cells drifting. The load cells are incredibly sensitive, where even the slightest temperature change can alter their output substantially. I was having a lot of trouble getting consistent results that stayed still. To fix this, I soldered a capacitor across two of the outputs of each load cell to smooth the signal and I implemented a moving average in the code to group outputs together. If I ever redo this project, I would probably replace these with an analog low pass filter.
+
+
