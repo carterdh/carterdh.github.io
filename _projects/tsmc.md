@@ -47,10 +47,13 @@ I needed to determine **if** a pump could be recycled, **how** to recycle it mos
 
 ### Recyclability Factors
 There were multiple factors that I considered to determine the "recyclability" of an individual pump. 
+
 **1. Pump Age**
   effwoeofwpoef
+  
 **2. Photoresist(PR) Properties**
   wgoiwi w
+  
 **3. Cleaning Procedure**
 8fwho
 
