@@ -49,16 +49,22 @@ I needed to determine **if** a pump could be recycled, **how** to recycle it mos
 There were multiple factors that I considered to determine the "recyclability" of an individual pump. 
 
 **1. Pump Age**
-  effwoeofwpoef
+
+  After a pump is removed from a tool, it is placed in a cabinet for a long time before disposal or in preparation for a future recycling effort. PR will crystallize the longer it sits idle, so theoretically, the longer a pump has been in the cabinet, the harder it will be to clean due to crystallized blocks.
   
 **2. Photoresist(PR) Properties**
-  wgoiwi w
+
+  There are upwards of 20 different PRs used, each with their own properties and some being used more that others. The two main properties that were considered were viscosity and vapor pressure. The viscosity affects how easy it may be to flush out, and the vapor pressure affects how quickly it will crystallize. 
   
 **3. Cleaning Procedure**
-8fwho
+
+  Due to proprietary information with the company that makes the pumps, the only recycling efforts I was allowed to do was to flush them out with standard pre-qualification procedures (this is discussed in more detail in the second project I was assigned to). I had three different procedures I could attempt.
 
 ### My Actions
 
 ### Outcome
+
+
+## Pump Pre-Qualification Efficiency
 
 
