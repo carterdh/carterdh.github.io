@@ -88,16 +88,14 @@ This macro takes the data from the Pump Analysis Macro and the list of available
 
 ## DPS Tool Efficiency
 ### Project Overview
-Whenever a new pump is bought, it comes with trace particles that need to be flushed out to get a pump ready for production. This process is called "pre-qualification." These processes can be done on main tools, but it is mainly done on a tool called the DPS, which is specifically designed for pump pre-qualification. Pre-Q can take upwards of two weeks to complete for a set of three pumps, which can slow down production. The reason it takes so long is that there are many recipes that need to be manually started by workers, and there are many chemical bottles that need to be replaced every few hours. The actual time the pumps are being actively flushed only adds up to around five days. So how does five days become two weeks? It came mainly from managerial issues between my team and the team that operated the DPS in the fab. My second project was to reduce this gap or at least prove that it CAN be reduced. 
-
+Whenever a new pump is bought, it comes with trace particles that need to be flushed out before production. This process is called "pre-qualification." These processes can be done on main tools, but are mainly done on a dedicated qualification tool. Pre-Q could take upwards of two weeks, slowing production. Much of the additional time came from manually starting recipes, replacing chemical bottles, and coordination between my team and the team operating the qualification tool. My second project was to reduce this gap or at least prove that it could be reduced.
 ### Actions
-For a few weeks, I worked very closely with the head of the team to determine all possible areas of inefficiency. The crew isn't only responsible for the DPS, and they had other tools that needed attention. I set up remote access to the DPS so I could access it from the office and checked it every few hours, taking screenshots and tracking their progress on a Gantt Chart. 
+For a few weeks, I worked closely with the head of the team to determine areas of inefficiency. The crew was responsible for other tools as well, so I set up remote access to the qualification tool and checked it every few hours, taking screenshots and tracking progress on a Gantt chart.
 
-Working closely with them gave me a unique perspective that allowed me to determine the difficulties they faced that led to the inefficiencies. I tried to give them the benefit of the doubt and treat the disconnect as mainly issues on our side. 
+Working closely with the crew gave me a unique perspective on the difficulties they faced. I tried to give them the benefit of the doubt and treat the disconnect as mainly issues on our side.
 
-They told me they could not obtain enough bottles at a time, so I worked with management to get them a larger cart. They said that their bottle supplier was not always available, so I called them and figured out how to rework the schedule. I clarified a miscommunication between our two teams regarding how many bottles they were allowed to obtain every day. I had daily meetings with the crew's leader to ask about anomalies I noticed on the DPS to determine any small issues that no one noticed. Finally, I kept the pressure on to make sure they were actively thinking about the DPS. 
+They told me they could not obtain enough bottles at a time, so I worked with management to get them a larger cart. They said their bottle supplier was not always available, so I called them and helped rework the schedule. I also clarified a miscommunication between our teams regarding how many bottles they were allowed to obtain each day. Finally, I had daily meetings with the crew's leader to ask about anomalies I noticed and kept the pressure on to make sure the tool remained a priority.
 
 ### Outcome
-In the end, I was able to reduce pump Pre-Q time by 50%, from two weeks to one weeks. This made my coworkers very happy!
-
+In the end, I was able to reduce pump Pre-Q time by 50%, from two weeks to one week. This made my coworkers very happy!
 
