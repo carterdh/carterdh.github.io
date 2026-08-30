@@ -44,7 +44,7 @@ gallery:
     description: "Center of mass finder"
 
   - type: "youtube"
-    file: "https://www.youtube.com/watch?v=PuoGqbLbRhc"
+    file: "https://youtu.be/iR6r2DKwyKw"
     description: "Center of mass finder demonstration"
 ---
 ## Project Overview
