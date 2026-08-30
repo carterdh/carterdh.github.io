@@ -44,7 +44,6 @@ Interns are assigned a project by their department to work on throughout the sum
 One of the most common procedures handled by my team was the replacement of coating pumps. Each nozzle on a tool needed its own pump, and there are between 30 and 50 nozzles per tool and many tools. Each pump only lasted a few months before it started introducing particles or other inconsistencies to the wafers, so this added together meant that pumps were replaced on a very regular basis. Each pump cost between 15 and 30 thousand dollars, so as you can imagine, the costs add up quick. I was tasked with determining if pumps can be cleaned after removal from a tool, then re-used for production lines.
 
 I needed to determine **if** a pump could be recycled, **how** to recycle it most efficiently, and **what** impacts the "recyclability of a pump.
-
 ### Recyclability Factors
 There were multiple factors that I considered to determine the "recyclability" of an individual pump. 
 
@@ -59,17 +58,14 @@ There were multiple factors that I considered to determine the "recyclability" o
 **3. Cleaning Procedure**
 
   Due to proprietary information with the company that makes the pumps, the only recycling efforts I was allowed to do was to flush them out with standard pre-qualification procedures (this is discussed in more detail in the second project I was assigned to). I had three different procedures I could attempt. I will refer to them as procedures 1, 2, and 3.
-
 ### My Actions
   The only options I had for pump recycling were standard pre-qualification procedures on a tool called the DPS. Cleaning takes about 1-2 weeks, so it was important that I picked the best candidates for recycling and collected the data efficiently. For the first pump, I determined which PRs are the most common and chose my candidates from those. Picking a common PR meant the most possible savings in the future. I picked a pump that was fairly new to get a baseline and used the most thorough cleaning procedure (procedure 1) to determine if recycling was even possible.
 
 I repeated this three times to collect the most possible data.
-
 ### Outcome
-I was only allowed to recycle one pump at a time to leave room on the DPS for production pumps. Since each pump took about two weeks to recycle and I wasn't able to start until later, three pumps were recycled over the course of the internship. The criteria to determine if a pump was "clean" was a tool that flushed each pump and recorded particles per mL with a resolution of 18 nanometers. If the average was less than 5, it could considered clean
+I was only allowed to recycle one pump at a time to leave room on the DPS for production pumps. Since each pump took about two weeks to recycle and I wasn't able to start until later, **three pumps were recycled** over the course of the internship. The criteria to determine if a pump was "clean" was a tool that flushed each pump and recorded particles per mL with a resolution of 18 nanometers. If the average was less than 5 particles/mL, it could considered clean
 
 I was able to successfully determine that pumps could be effectively recycled, but the other questions in my problem statement needed significantly more data to answer reliably. To do that, I needed to create a framework to hand-off to other engineers when I leave.
-
 ### Excel VBAs for Project Handover
 
 
