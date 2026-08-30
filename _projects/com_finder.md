@@ -40,7 +40,6 @@
 
 
 ---
+## Project Overview
 
-    ## Project Overview
-
-    Write the actual project description here.
+Write the actual project description here.
