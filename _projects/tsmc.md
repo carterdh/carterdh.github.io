@@ -54,15 +54,25 @@ There were multiple factors that I considered to determine the "recyclability" o
   
 **2. Photoresist(PR) Properties**
 
-  There are upwards of 20 different PRs used, each with their own properties and some being used more that others. The two main properties that were considered were viscosity and vapor pressure. The viscosity affects how easy it may be to flush out, and the vapor pressure affects how quickly it will crystallize. 
+  There are upwards of 20 different PRs used, each with their own properties and some being used more that others. The two main properties that were considered were viscosity and vapor pressure. The viscosity affects how easy it may be to flush out, and the vapor pressure affects how quickly it will crystallize. Each pump only used one PR in its lifetime, so the PR it was exposed to is likely a large factor in its recyclability.
   
 **3. Cleaning Procedure**
 
-  Due to proprietary information with the company that makes the pumps, the only recycling efforts I was allowed to do was to flush them out with standard pre-qualification procedures (this is discussed in more detail in the second project I was assigned to). I had three different procedures I could attempt.
+  Due to proprietary information with the company that makes the pumps, the only recycling efforts I was allowed to do was to flush them out with standard pre-qualification procedures (this is discussed in more detail in the second project I was assigned to). I had three different procedures I could attempt. I will refer to them as procedures 1, 2, and 3.
 
 ### My Actions
+  The only options I had for pump recycling were standard pre-qualification procedures on a tool called the DPS. Cleaning takes about 1-2 weeks, so it was important that I picked the best candidates for recycling and collected the data efficiently. For the first pump, I determined which PRs are the most common and chose my candidates from those. Picking a common PR meant the most possible savings in the future. I picked a pump that was fairly new to get a baseline and used the most thorough cleaning procedure (procedure 1) to determine if recycling was even possible.
+
+I repeated this three times to collect the most possible data.
 
 ### Outcome
+I was only allowed to recycle one pump at a time to leave room on the DPS for production pumps. Since each pump took about two weeks to recycle and I wasn't able to start until later, three pumps were recycled over the course of the internship. The criteria to determine if a pump was "clean" was a tool that flushed each pump and recorded particles per mL with a resolution of 18 nanometers. If the average was less than 5, it could considered clean
+
+I was able to successfully determine that pumps could be effectively recycled, but the other questions in my problem statement needed significantly more data to answer reliably. To do that, I needed to create a framework to hand-off to other engineers when I leave.
+
+### Excel VBAs for Project Handover
+
+
 
 
 ## Pump Pre-Qualification Efficiency
