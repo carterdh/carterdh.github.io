@@ -513,69 +513,82 @@ layout: default
                      MEDIA GALLERY
                      ===================================================== -->
 
-                {% if page.gallery %}
+{% if page.gallery %}
+<section
+class="project-media-group"
+id="gallery"
+>
 
-                <section
-                    class="project-media-group"
-                    id="gallery"
-                >
+<div class="media-gallery-stack">
 
-                    <div class="media-gallery-stack">
+{% for media in page.gallery %}
 
-                        {% for media in page.gallery %}
+<div class="media-item">
 
-                        <div class="media-item">
+{% if media.type == 'youtube' %}
 
-                            {% assign file_extension = media.file | split: '.' | last | downcase %}
+{% assign youtube_id = media.file
+  | split: 'v=' | last
+  | split: '&' | first
+  | split: 'youtu.be/' | last
+  | split: '?' | first %}
 
+<iframe
+src="https://www.youtube.com/embed/{{ youtube_id }}"
+class="gallery-youtube"
+title="{{ media.description | default: page.title }}"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen
+>
+</iframe>
 
-                            {% if file_extension == 'mp4'
-                               or file_extension == 'webm'
-                               or file_extension == 'avi' %}
+{% else %}
 
-                            <video
-                                controls
-                                class="gallery-video"
-                            >
+{% assign file_extension = media.file | split: '.' | last | downcase %}
 
-                                <source
-                                    src="{{ media.file | relative_url }}"
-                                    type="video/{{ file_extension }}"
-                                >
+{% if file_extension == 'mp4'
+or file_extension == 'webm'
+or file_extension == 'avi' %}
 
-                                Your browser does not support the video tag.
+<video
+controls
+class="gallery-video"
+>
+<source
+src="{{ media.file | relative_url }}"
+type="video/{{ file_extension }}"
+>
+Your browser does not support the video tag.
+</video>
 
-                            </video>
+{% else %}
 
-                            {% else %}
+<img
+src="{{ media.file | relative_url }}"
+alt="{{ media.description | default: page.title }}"
+class="gallery-image"
+data-zoomable
+>
 
-                            <img
-                                src="{{ media.file | relative_url }}"
-                                alt="{{ media.description | default: page.title }}"
-                                class="gallery-image"
-                                data-zoomable
-                            >
+{% endif %}
 
-                            {% endif %}
+{% endif %}
 
+{% if media.description %}
+<p class="media-caption">
+{{ media.description }}
+</p>
+{% endif %}
 
-                            {% if media.description %}
+</div>
 
-                            <p class="media-caption">
-                                {{ media.description }}
-                            </p>
+{% endfor %}
 
-                            {% endif %}
+</div>
 
-                        </div>
-
-                        {% endfor %}
-
-                    </div>
-
-                </section>
-
-                {% endif %}
+</section>
+{% endif %}
 
 <!-- =====================================================
      PDF DOCUMENTS
