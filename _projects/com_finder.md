@@ -2,7 +2,7 @@
  layout: project
 
  title: "Center of Mass Finder"
- description: "Short description."
+ description: "For the final project of my mechatronics class, I made a center of mass finder with an arm that points to the center of mass of an object placed on the plate."
 
  start_date: "March 2026"
  end_date: "May 2026"
@@ -11,9 +11,12 @@
    - SolidWorks
    - CAD
    - 3D Printing
+   - Actuation
+   - Load cells
+   - Signal processing
 
  categories:
-   - Robotics
+   - Mechatronics
    - Mechanical Design
 
  featured_image: "/assets/images/projects/com/com1.jpeg"
