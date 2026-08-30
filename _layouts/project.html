@@ -514,24 +514,20 @@ layout: default
                      ===================================================== -->
 
 {% if page.gallery %}
-<section
-class="project-media-group"
-id="gallery"
->
-
-<div class="media-gallery-stack">
-
-{% for media in page.gallery %}
-
-<div class="media-item">
-
+<section 
+class="project-media-group" 
+id="gallery" 
+> 
+ 
+<div class="media-gallery-stack"> 
+ 
+{% for media in page.gallery %} 
+ 
+<div class="media-item"> 
+ 
 {% if media.type == 'youtube' %}
 
-{% assign youtube_id = media.file
-  | split: 'v=' | last
-  | split: '&' | first
-  | split: 'youtu.be/' | last
-  | split: '?' | first %}
+{% assign youtube_id = media.file | split: '/' | last | split: '?' | first %}
 
 <iframe
 src="https://www.youtube.com/embed/{{ youtube_id }}"
@@ -589,7 +585,6 @@ data-zoomable
 
 </section>
 {% endif %}
-
 <!-- =====================================================
      PDF DOCUMENTS
      ===================================================== -->
