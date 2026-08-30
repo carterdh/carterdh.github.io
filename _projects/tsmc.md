@@ -40,9 +40,9 @@ Interns are assigned a project by their department to work on throughout the sum
 
 
 ## Pump Recycling Project
-
 ### Overview
 One of the most common procedures handled by my team was the replacement of coating pumps. Each nozzle on a tool needed its own pump, and there are between 30 and 50 nozzles per tool and many tools. Each pump only lasted a few months before it started introducing particles or other inconsistencies to the wafers, so this added together meant that pumps were replaced on a very regular basis. Each pump cost between 15 and 30 thousand dollars, so as you can imagine, the costs add up quick. I was tasked with determining if pumps can be cleaned after removal from a tool, then re-used for production lines.
+
 I needed to determine **if** a pump could be recycled, **how** to recycle it most efficiently, and **what** impacts the "recyclability of a pump.
 
 ### Recyclability Factors
