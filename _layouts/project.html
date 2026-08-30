@@ -527,17 +527,16 @@ id="gallery"
  
 {% if media.type == 'youtube' %}
 
-{% assign youtube_id = media.file | split: '/' | last | split: '?' | first %}
+{% assign youtube_id = media.file | split: 'v=' | last | split: '&' | first %}
 
 <iframe
-src="https://www.youtube.com/embed/{{ youtube_id }}"
-class="gallery-youtube"
-title="{{ media.description | default: page.title }}"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen
->
-</iframe>
+  src="https://www.youtube.com/embed/{{ youtube_id }}"
+  class="gallery-youtube"
+  title="{{ media.description | default: page.title }}"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
 
 {% else %}
 
