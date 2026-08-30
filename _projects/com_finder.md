@@ -21,7 +21,6 @@
  downloads:
    - name: "CAD Assembly"
      file: "/assets/files/com/COM Finder CAD.zip"
-     type: "CAD"
    - name: "Calibration Code Arduino"
      file: "/assets/files/com/Lab 9 Calibration Arduino.pdf"
      type: "pdf"
