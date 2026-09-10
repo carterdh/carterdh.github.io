@@ -63,6 +63,10 @@ On the edges of the plate are four load cells, constantly outputting data based 
 
 Since the load cells only output 24 bit ADC values, calibration must be done to determine how each load cell's values match up to specific weights or weight distributions. This calibration needed to be done  while also considering the significant drift the load cells were producing (see the "Load Cell Troubleshooting" section). 
 
+I decided to make a plate with cutouts of known positions and use a weight of a known mass to create nine data points of known weight and location. I wrote a matlab script where I could input that data and get a calibration matrix.
+
+The MATLAB script calibrates the four load cells by using several measurements with a known 200 g weight placed at known \(x\)- and \(y\)-coordinates on the plate. It solves a linear system to find a 3×4 calibration matrix that converts the four raw sensor readings into total weight \(W\), \(Wx\), and \(Wy\). The COM coordinates are then calculated as \(x=(Wx)/W\) and \(y=(Wy)/W\). The script outputs the calibration matrix in C/C++ format for use on the microcontroller, along with the condition number and estimated weight/COM for each calibration point to verify the accuracy of the calibration.
+
 ## Load Cell Troubleshooting
 
 My biggest challenge in this project was the load cells drifting. The load cells are incredibly sensitive, where even the slightest temperature change can alter their output substantially due to thermal expansion. I was having a lot of trouble getting consistent results that stayed still. To fix this, I soldered a capacitor across two of the outputs of each load cell to smooth the signal and I implemented a moving average in the code to group outputs together. If I ever redo this project, I would probably replace these with an analog low pass filter.
