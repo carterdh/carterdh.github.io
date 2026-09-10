@@ -14,10 +14,12 @@
    - Actuation
    - Load cells
    - Signal processing
+   - Arduino
 
  categories:
    - Mechatronics
    - Mechanical Design
+   - Arduino
 
  featured_image: "/assets/images/projects/com/com1.jpeg"
 
@@ -52,16 +54,17 @@
 ---
 ## Overview
 
-For the final of my mechatronics class, our prompt was "make something cool with Arduino that uses sensing, logic, and actuation." I decided to make a center of mass finder with an arm that moves to the center of mass that allows the user to put a sharpie mark at the center. 
+For the final of my mechatronics class, our prompt was "make something interesting with Arduino that uses sensing, logic, and actuation." I decided to make a center of mass finder with an arm that moves to the center of mass that allows the user to put a sharpie mark at the center. 
 
 On the edges of the plate are four load cells, constantly outputting data based on their deflection. The arm is made up of two stepper motors and simple two linkage inverse kinematics to move the end effector to the correct location on the plate.
 
 
 ## Calibration
 
+Since the load cells only output 24 bit ADC values, calibration must be done to determine how each load cell's values match up to specific weights or weight distributions. This calibration needed to be done  while also considering the significant drift the load cells were producing (see the "Load Cell Troubleshooting" section). 
 
 ## Load Cell Troubleshooting
 
-My biggest challenge in this project was the load cells drifting. The load cells are incredibly sensitive, where even the slightest temperature change can alter their output substantially. I was having a lot of trouble getting consistent results that stayed still. To fix this, I soldered a capacitor across two of the outputs of each load cell to smooth the signal and I implemented a moving average in the code to group outputs together. If I ever redo this project, I would probably replace these with an analog low pass filter.
+My biggest challenge in this project was the load cells drifting. The load cells are incredibly sensitive, where even the slightest temperature change can alter their output substantially due to thermal expansion. I was having a lot of trouble getting consistent results that stayed still. To fix this, I soldered a capacitor across two of the outputs of each load cell to smooth the signal and I implemented a moving average in the code to group outputs together. If I ever redo this project, I would probably replace these with an analog low pass filter.
 
 
