@@ -79,5 +79,5 @@ To calculate the positioning, I used the standard two linkage inverse kinematics
 
 ## Outcome and Reflection
 
-This project was able to consistently position the end effector within ~2mm of the actual location of the center of mass, which I consider a success! I had never worked with load cells before and was able to learn a lot from this process. If I were to redo this project, I would pay greater attention to 
+This project was able to consistently position the end effector within ~2mm of the actual location of the center of mass, which I consider a success! I had never worked with load cells before and was able to learn a lot from this process. If I were to redo this project, I would pay greater attention to the load cell drifting and add a detailed analog filter with an potentiometer for adjustability to each load cell. This would be a much larger endeavor (which is why I didn't do it in the first place) but it would greatly reduce the headache from working with such finnicky sensors. 
 
